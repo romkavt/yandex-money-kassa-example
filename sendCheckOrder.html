@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta content="IE=edge" http-equiv="X-UA-Compatible">
+    <meta content="width=device-width, initial-scale=1" name="viewport">
+    <title>Тестирование вызовов checkPayment и paymentAviso</title>
+</head>
+<body>
+<!--<form method="post" action="http://localhost/shop/index.php">-->
+<!--<form method="post" action="http://109.120.173.141/baibikShop/" target="_blank">
+    requestDatetime: <input size="100" type="text" name="requestDatetime" value="2011-05-04T20:38:00.000+04:00"/><br/>
+    checkOrder: <input size="100" type="text" name="action" value="checkOrder"/><br/>
+    md5: <input size="100" type="text" name="md5" value="8256D2A032A35709EAF156270C9EFE2E"/><br/>
+    shopId: <input size="100" type="text" name="shopId" value="13"/><br/>
+    shopArticleId: <input size="100" type="text" name="shopArticleId" value="456"/><br/>
+    invoiceId: <input size="100" type="text" name="invoiceId" value="1234567"/><br/>
+    customerNumber: <input size="100" type="text" name="customerNumber" value="8123294469"/><br/>
+    orderCreatedDatetime: <input size="100" type="text" name="orderCreatedDatetime" value="2011-05-04T20:38:00.000+04:00"/><br/>
+    orderSumAmount: <input size="100" type="text" name="orderSumAmount" value="87.10"/><br/>
+    orderSumCurrencyPaycash: <input size="100" type="text" name="orderSumCurrencyPaycash" value="643"/><br/>
+    orderSumBankPaycash: <input size="100" type="text" name="orderSumBankPaycash" value="1001"/><br/>
+    shopSumAmount: <input size="100" type="text" name="shopSumAmount" value="86.23"/><br/>
+    shopSumCurrencyPaycash: <input size="100" type="text" name="shopSumCurrencyPaycash" value="643"/><br/>
+    shopSumBankPaycash: <input size="100" type="text" name="shopSumBankPaycash" value="1001"/><br/>
+    paymentPayerCode: <input size="100" type="text" name="paymentPayerCode" value="42007148320"/><br/>
+    paymentType: <input size="100" type="text" name="paymentType" value="AC"/><br/>
+    <input type="submit">
+</form>-->
+
+<!--<form method="post" action="http://109.120.173.141/baibikShop/index-->
+CheckOrder<br>
+<form method="post" action="http://localhost/shop/checkOrder.php?cps_theme=default&merchant_order_id=baibik_050315114230_151_151&customerNumber=baibik&sumCurrency=10643&wbp_Version=2&cps_user_country_code=RU&shopSumCurrencyPaycash=10643&ErrorTemplate=ym2xmlerror&page=%2Fselect-wallet.xml&shopId=151&action=checkOrder&cps_changeSum=false&cps_rebillingAllowed=false&orderCreatedDatetime=2015-03-05T11%3A42%3A49.669%2B03%3A00&rebillingOn=false&wbp_InactivityPeriod=2&SuccessTemplate=ym2xmlsuccess&WAShopID=1936803660&targetcurrency=643&wbp_ShopKeyID=2350484147&shopSumBankPaycash=1003&isOUTshop=true&requestDatetime=2015-03-05T11%3A43%3A00.880%2B03%3A00&wbp_shoperrorinfo=Shop+error&eventType=PAYMENT&wbp_ShopEncryptionKey=hAAAEicBAI%2FgWZ7nPmvPCEf6CyNZrDT%2FM5dqhxF0IQeB%2Bpv7vetU1a35irDRuShgwsyUjxsUxHiwFgoOO51QqednVreeWZO16APsHZhWFQGw4cZhSzOlC5470PgGSGt%2FMZTqxetuSYe9ZbnaOMXqy3grEkzB%2FZ1iim40KHtTyewiIiXJhAKJ&storeRequest=true&cps_user_ip=77.75.158.34&successURL=&shopArticleId=151&orderSumCurrencyPaycash=10643&localAttr1=PAYMENT&payment-name=%D0%91%D0%B0%D0%B9%D0%B1%D0%B8%D0%BA-%D0%A8%D0%BE%D0%BF&orderSumBankPaycash=1003&wbp_ShopAddress=77.75.157.167%3A9128&invoiceId=2000000419580&paymentType=PC&wbp_CorrespondentID=F55EFDE2D16BA0456B2DDBE468A6C0F8B1D0D105&paymentPayerCode=4100322344779&wbp_ShopAdditionalAddress=77.75.157.167%3A9138&isViaWeb=true&md5=28495076FB9340A7C9CBCD8C506BE850&cps_region_id=2&cps-source=default&nst_unilabel=1c8a2ab6-0001-5000-8000-000000037a11&wbp_messagetype=MoneyInvitationRequest&scid=59816" target="_blank">
+    Сумма: <input type="text" name="orderSumAmount" value="100.00"><br>
+    <input type="submit" value="checkOrder"><br>
+</form>
+<br><br>
+<hr><br>
+PaymentAviso<br>
+<form method="post" action="http://localhost/shop/paymentAviso.php?cps_theme=default&merchant_order_id=baibik_050315114230_151_151&customerNumber=baibik&sumCurrency=10643&wbp_Version=2&cps_user_country_code=RU&shopSumCurrencyPaycash=10643&ErrorTemplate=ym2xmlerror&page=%2Fselect-wallet.xml&shopId=151&action=paymentAviso&cps_changeSum=false&cps_rebillingAllowed=false&orderCreatedDatetime=2015-03-05T11%3A42%3A49.669%2B03%3A00&rebillingOn=false&wbp_InactivityPeriod=2&SuccessTemplate=ym2xmlsuccess&WAShopID=1936803660&targetcurrency=643&wbp_ShopKeyID=2350484147&shopSumBankPaycash=1003&isOUTshop=true&requestDatetime=2015-03-05T11%3A43%3A00.880%2B03%3A00&wbp_shoperrorinfo=Shop+error&eventType=PAYMENT&wbp_ShopEncryptionKey=hAAAEicBAI%2FgWZ7nPmvPCEf6CyNZrDT%2FM5dqhxF0IQeB%2Bpv7vetU1a35irDRuShgwsyUjxsUxHiwFgoOO51QqednVreeWZO16APsHZhWFQGw4cZhSzOlC5470PgGSGt%2FMZTqxetuSYe9ZbnaOMXqy3grEkzB%2FZ1iim40KHtTyewiIiXJhAKJ&storeRequest=true&cps_user_ip=77.75.158.34&successURL=&shopArticleId=151&orderSumCurrencyPaycash=10643&localAttr1=PAYMENT&payment-name=%D0%91%D0%B0%D0%B9%D0%B1%D0%B8%D0%BA-%D0%A8%D0%BE%D0%BF&orderSumBankPaycash=1003&wbp_ShopAddress=77.75.157.167%3A9128&invoiceId=2000000419580&paymentType=PC&wbp_CorrespondentID=F55EFDE2D16BA0456B2DDBE468A6C0F8B1D0D105&paymentPayerCode=4100322344779&wbp_ShopAdditionalAddress=77.75.157.167%3A9138&isViaWeb=true&md5=28495076FB9340A7C9CBCD8C506BE850&cps_region_id=2&cps-source=default&nst_unilabel=1c8a2ab6-0001-5000-8000-000000037a11&wbp_messagetype=MoneyInvitationRequest&scid=59816" target="_blank">
+    Сумма: <input type="text" name="orderSumAmount" value="100.00"><br>
+    <input type="submit" value="paymentAviso"><br>
+</form>
+
+</body>
+</html>

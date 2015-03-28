@@ -1,0 +1,797 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="472cd838-2100-4c05-9431-7ca6b7f6edfb" name="Default" comment="" />
+    <ignored path="shop.iws" />
+    <ignored path=".idea/workspace.xml" />
+    <file path="/sendCheckOrder.html" changelist="472cd838-2100-4c05-9431-7ca6b7f6edfb" time="1425657346315" ignored="false" />
+    <file path="/Dummy.txt" changelist="472cd838-2100-4c05-9431-7ca6b7f6edfb" time="1427537456366" ignored="false" />
+    <file path="/CheckOrder.php" changelist="472cd838-2100-4c05-9431-7ca6b7f6edfb" time="1425581448376" ignored="false" />
+    <file path="/index.php" changelist="472cd838-2100-4c05-9431-7ca6b7f6edfb" time="1426188183106" ignored="false" />
+    <file path="C:/Projects/PostIt/postIt.html" changelist="472cd838-2100-4c05-9431-7ca6b7f6edfb" time="1425457053096" ignored="false" />
+    <file path="/paymentForm.html" changelist="472cd838-2100-4c05-9431-7ca6b7f6edfb" time="1427530466186" ignored="false" />
+    <file path="$USER_HOME$/Documents/Проекты/ЕПШ/Настройки витрины ЕПШ.test.js" changelist="472cd838-2100-4c05-9431-7ca6b7f6edfb" time="1425480379553" ignored="false" />
+    <file path="$USER_HOME$/Documents/Проекты/ЕПШ/Настройки витрины ЕПШ.xml" changelist="472cd838-2100-4c05-9431-7ca6b7f6edfb" time="1427269793832" ignored="false" />
+    <file path="/paymentForm.php" changelist="472cd838-2100-4c05-9431-7ca6b7f6edfb" time="1426040885189" ignored="false" />
+    <file path="/.htaccess" changelist="472cd838-2100-4c05-9431-7ca6b7f6edfb" time="1425493763533" ignored="false" />
+    <file path="/a.dummy" changelist="472cd838-2100-4c05-9431-7ca6b7f6edfb" time="1427530122360" ignored="false" />
+    <file path="/YaMoneyCommonHttpProtocol.php" changelist="472cd838-2100-4c05-9431-7ca6b7f6edfb" time="1427536161146" ignored="false" />
+    <file path="/checkOrder.php" changelist="472cd838-2100-4c05-9431-7ca6b7f6edfb" time="1425659492761" ignored="false" />
+    <file path="/Settings.php" changelist="472cd838-2100-4c05-9431-7ca6b7f6edfb" time="1427192688967" ignored="false" />
+    <file path="/Test.php" changelist="472cd838-2100-4c05-9431-7ca6b7f6edfb" time="1425660725737" ignored="false" />
+    <file path="/paymentAviso.php" changelist="472cd838-2100-4c05-9431-7ca6b7f6edfb" time="1426040826914" ignored="false" />
+    <file path="$USER_HOME$/Documents/ТЗ/Yandex" changelist="472cd838-2100-4c05-9431-7ca6b7f6edfb" time="1426576302535" ignored="false" />
+    <file path="/Yandex" changelist="472cd838-2100-4c05-9431-7ca6b7f6edfb" time="1426154097666" ignored="false" />
+    <file path="$USER_HOME$/Documents/Проекты/ЕПШ/Платная ссылка.txt" changelist="472cd838-2100-4c05-9431-7ca6b7f6edfb" time="1427208769380" ignored="false" />
+    <file path="$USER_HOME$/Documents/Проекты/ЕПШ/Test/ym_peoplename.js" changelist="472cd838-2100-4c05-9431-7ca6b7f6edfb" time="1426076283395" ignored="false" />
+    <file path="/ym_peoplename.js" changelist="472cd838-2100-4c05-9431-7ca6b7f6edfb" time="1426076275204" ignored="false" />
+    <file path="$USER_HOME$/Documents/Проекты/ЕПШ/Настройки витрины ЕПШ.test.xforms.xml" changelist="472cd838-2100-4c05-9431-7ca6b7f6edfb" time="1427269783947" ignored="false" />
+    <file path="/Настройки витрины ЕПШ.xml" changelist="472cd838-2100-4c05-9431-7ca6b7f6edfb" time="1426080985739" ignored="false" />
+    <file path="$USER_HOME$/Documents/Проекты/Квитанции/Платная ссылкаTest.txt" changelist="472cd838-2100-4c05-9431-7ca6b7f6edfb" time="1426081642079" ignored="false" />
+    <file path="/Yandex.Managment.KnowladgeDatabase.txt" changelist="472cd838-2100-4c05-9431-7ca6b7f6edfb" time="1426577593627" ignored="false" />
+    <file path="$USER_HOME$/Documents/ТЗ/Yandex.Managment.KnowladgeDatabase.txt" changelist="472cd838-2100-4c05-9431-7ca6b7f6edfb" time="1426577819146" ignored="false" />
+    <file path="$USER_HOME$/Documents/Проекты/ЕПШ/Нет налогов.xml" changelist="472cd838-2100-4c05-9431-7ca6b7f6edfb" time="1426148271050" ignored="false" />
+    <file path="$USER_HOME$/Documents/Проекты/API Штрафов/API штрафов.html" changelist="472cd838-2100-4c05-9431-7ca6b7f6edfb" time="1426245932367" ignored="false" />
+    <file path="/API штрафов.html" changelist="472cd838-2100-4c05-9431-7ca6b7f6edfb" time="1426245835393" ignored="false" />
+    <file path="$USER_HOME$/Documents/Проекты/Моё дело/Лог с ошибками.txt" changelist="472cd838-2100-4c05-9431-7ca6b7f6edfb" time="1426515732654" ignored="false" />
+    <file path="$USER_HOME$/Documents/Проекты/Моё дело/Лог с ошибкамиParsed.txt" changelist="472cd838-2100-4c05-9431-7ca6b7f6edfb" time="1426575176651" ignored="false" />
+    <file path="$USER_HOME$/Documents/Проекты/SMS-банкинг. Штрафы/Параметры" changelist="472cd838-2100-4c05-9431-7ca6b7f6edfb" time="1427180076498" ignored="false" />
+    <file path="$USER_HOME$/Documents/Проекты/Налоги/ПС1.txt" changelist="472cd838-2100-4c05-9431-7ca6b7f6edfb" time="1426587276375" ignored="false" />
+    <file path="$USER_HOME$/Documents/Проекты/Автоплатежи/Результаты демл 17.03.txt" changelist="472cd838-2100-4c05-9431-7ca6b7f6edfb" time="1426690486389" ignored="false" />
+    <file path="/Результаты демл 17.03.txt" changelist="472cd838-2100-4c05-9431-7ca6b7f6edfb" time="1426593524994" ignored="false" />
+    <file path="/MWS.php" changelist="472cd838-2100-4c05-9431-7ca6b7f6edfb" time="1427529868278" ignored="false" />
+    <file path="/listOrders.php" changelist="472cd838-2100-4c05-9431-7ca6b7f6edfb" time="1426674565645" ignored="false" />
+    <file path="/Log.php" changelist="472cd838-2100-4c05-9431-7ca6b7f6edfb" time="1427183511016" ignored="false" />
+    <file path="/Utils.php" changelist="472cd838-2100-4c05-9431-7ca6b7f6edfb" time="1426669734349" ignored="false" />
+    <file path="/mws.html" changelist="472cd838-2100-4c05-9431-7ca6b7f6edfb" time="1426672546720" ignored="false" />
+    <file path="/listReturns.php" changelist="472cd838-2100-4c05-9431-7ca6b7f6edfb" time="1426674628876" ignored="false" />
+    <file path="$USER_HOME$/Documents/Проекты/Моё дело/test.txt" changelist="472cd838-2100-4c05-9431-7ca6b7f6edfb" time="1426753669195" ignored="false" />
+    <file path="/test.txt" changelist="472cd838-2100-4c05-9431-7ca6b7f6edfb" time="1426753669195" ignored="false" />
+    <file path="$USER_HOME$/Documents/Проекты/Моё дело/Кнопка оплаты.html" changelist="472cd838-2100-4c05-9431-7ca6b7f6edfb" time="1427180534960" ignored="false" />
+    <file path="/Кнопка оплаты.html" changelist="472cd838-2100-4c05-9431-7ca6b7f6edfb" time="1427180526854" ignored="false" />
+    <file path="/returnPayment.php" changelist="472cd838-2100-4c05-9431-7ca6b7f6edfb" time="1427192302071" ignored="false" />
+    <file path="$USER_HOME$/Documents/Проекты/Автоплатежи/КонфигПисем525301.xml" changelist="472cd838-2100-4c05-9431-7ca6b7f6edfb" time="1427205832312" ignored="false" />
+    <file path="/КонфигПисем525301.xml" changelist="472cd838-2100-4c05-9431-7ca6b7f6edfb" time="1427202443091" ignored="false" />
+    <file path="$USER_HOME$/Documents/Проекты/ЕПШ/Test/paymentAviso.xml" changelist="472cd838-2100-4c05-9431-7ca6b7f6edfb" time="1427209393823" ignored="false" />
+    <file path="$USER_HOME$/Documents/Проекты/ЕПШ/Test/pa2.xml" changelist="472cd838-2100-4c05-9431-7ca6b7f6edfb" time="1427209755045" ignored="false" />
+    <file path="$USER_HOME$/Documents/Проекты/ЕПШ/Настройки витрины ЕПШ_CUR.xml" changelist="472cd838-2100-4c05-9431-7ca6b7f6edfb" time="1427269426479" ignored="false" />
+    <file path="/Замечания в процессе.txt" changelist="472cd838-2100-4c05-9431-7ca6b7f6edfb" time="1427535732636" ignored="false" />
+    <file path="$USER_HOME$/Documents/Аналитика/Описание протокола 3.0/Замечания в процессе.txt" changelist="472cd838-2100-4c05-9431-7ca6b7f6edfb" time="1427535732636" ignored="false" />
+    <file path="/cancelPayment.php" changelist="472cd838-2100-4c05-9431-7ca6b7f6edfb" time="1427529839388" ignored="false" />
+    <file path="$USER_HOME$/Documents/temp.txt" changelist="472cd838-2100-4c05-9431-7ca6b7f6edfb" time="1427530729565" ignored="false" />
+    <option name="TRACKING_ENABLED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ChangesViewManager" flattened_view="true" show_ignored="false" />
+  <component name="CreatePatchCommitExecutor">
+    <option name="PATCH_PATH" value="" />
+  </component>
+  <component name="DaemonCodeAnalyzer">
+    <disable_hints />
+  </component>
+  <component name="DatabaseView">
+    <flatten value="false" />
+    <groupTables value="false" />
+    <sortChildren value="false" />
+  </component>
+  <component name="DebuggerManager">
+    <ui_properties default_suspend_policy="SuspendAll" default_condition_enabled="true" />
+    <breakpoint_any default_suspend_policy="SuspendAll" default_condition_enabled="true">
+      <breakpoint>
+        <option name="NOTIFY_CAUGHT" value="true" />
+        <option name="NOTIFY_UNCAUGHT" value="true" />
+        <option name="ENABLED" value="false" />
+        <option name="LOG_ENABLED" value="false" />
+        <option name="LOG_EXPRESSION_ENABLED" value="false" />
+        <option name="REMOVE_AFTER_HIT" value="false" />
+        <option name="SUSPEND_POLICY" value="SuspendAll" />
+        <option name="SUSPEND" value="true" />
+        <option name="COUNT_FILTER_ENABLED" value="false" />
+        <option name="COUNT_FILTER" value="0" />
+        <option name="CONDITION_ENABLED" value="true" />
+        <option name="CLASS_FILTERS_ENABLED" value="false" />
+        <option name="INSTANCE_FILTERS_ENABLED" value="false" />
+        <option name="CONDITION" value="" />
+        <option name="LOG_MESSAGE" value="" />
+      </breakpoint>
+      <breakpoint>
+        <option name="NOTIFY_CAUGHT" value="true" />
+        <option name="NOTIFY_UNCAUGHT" value="true" />
+        <option name="ENABLED" value="false" />
+        <option name="LOG_ENABLED" value="false" />
+        <option name="LOG_EXPRESSION_ENABLED" value="false" />
+        <option name="REMOVE_AFTER_HIT" value="false" />
+        <option name="SUSPEND_POLICY" value="SuspendAll" />
+        <option name="SUSPEND" value="true" />
+        <option name="COUNT_FILTER_ENABLED" value="false" />
+        <option name="COUNT_FILTER" value="0" />
+        <option name="CONDITION_ENABLED" value="true" />
+        <option name="CLASS_FILTERS_ENABLED" value="false" />
+        <option name="INSTANCE_FILTERS_ENABLED" value="false" />
+        <option name="CONDITION" value="" />
+        <option name="LOG_MESSAGE" value="" />
+      </breakpoint>
+    </breakpoint_any>
+    <breakpoint_rules />
+    <ui_properties />
+  </component>
+  <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
+  <component name="FavoritesManager">
+    <favorites_list name="shop" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf>
+      <file leaf-file-name="log.txt" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/log.txt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="371" column="30" selection-start="27755" selection-end="27755" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="checkOrder.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/checkOrder.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="9" column="36" selection-start="249" selection-end="249" vertical-scroll-proportion="-5.8846154">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Settings.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Settings.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="23" column="100" selection-start="573" selection-end="586" vertical-scroll-proportion="-11.115385">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="MWS.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/mws/MWS.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="118" column="44" selection-start="3761" selection-end="3761" vertical-scroll-proportion="-14.538462">
+              <folding>
+                <marker date="1427530394246" expanded="true" signature="1711:1928" placeholder="..." />
+                <marker date="1427530394246" expanded="true" signature="1711:1783" placeholder="..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="cancelPayment.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/mws/cancelPayment.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="18" column="51" selection-start="389" selection-end="389" vertical-scroll-proportion="-11.769231">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="repeatCardPayment.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/mws/repeatCardPayment.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="5" column="0" selection-start="79" selection-end="79" vertical-scroll-proportion="-3.2692308">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="YaMoneyCommonHttpProtocol.php" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/YaMoneyCommonHttpProtocol.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="141" column="41" selection-start="5214" selection-end="5214" vertical-scroll-proportion="1.1672727">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="sendCheckOrder.html" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/sendCheckOrder.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="16" column="69" selection-start="960" selection-end="960" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="listReturns.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/mws/listReturns.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="18" column="45" selection-start="371" selection-end="371" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="paymentForm.html" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/paymentForm.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="27" column="54" selection-start="1077" selection-end="1077" vertical-scroll-proportion="-17.653847">
+              <folding>
+                <element signature="n#style#0;n#iframe#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="returnPayment.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/mws/returnPayment.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="18" column="50" selection-start="338" selection-end="439" vertical-scroll-proportion="-11.769231">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="confirmPayment.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/mws/confirmPayment.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="mws.html" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/mws/mws.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="10" column="68" selection-start="356" selection-end="356" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="listOrders.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/mws/listOrders.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="19" column="7" selection-start="319" selection-end="388" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Utils.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Utils.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="14" column="27" selection-start="218" selection-end="218" vertical-scroll-proportion="-5.230769">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Log.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Log.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="21" column="0" selection-start="299" selection-end="299" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="paymentAvisoPkcs7Request.txt" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/paymentAvisoPkcs7Request.txt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="paymentAviso.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/paymentAviso.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="9" column="40" selection-start="255" selection-end="255" vertical-scroll-proportion="-5.8846154">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FindManager">
+    <FindUsagesManager>
+      <setting name="OPEN_NEW_TAB" value="false" />
+    </FindUsagesManager>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitLogSettings">
+    <option name="myDateState">
+      <MyDateState />
+    </option>
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="changedFiles">
+      <list>
+        <option value="$PROJECT_DIR$/Utils.php" />
+        <option value="$PROJECT_DIR$/mws.html" />
+        <option value="$PROJECT_DIR$/MWS.php" />
+        <option value="$PROJECT_DIR$/listOrders.php" />
+        <option value="$PROJECT_DIR$/mws/listOrders.php" />
+        <option value="$PROJECT_DIR$/mws/listReturns.php" />
+        <option value="$PROJECT_DIR$/mws/log.txt" />
+        <option value="$PROJECT_DIR$/Log.php" />
+        <option value="$PROJECT_DIR$/log.txt" />
+        <option value="$PROJECT_DIR$/mws/returnPayment.php" />
+        <option value="$PROJECT_DIR$/Settings.php" />
+        <option value="$PROJECT_DIR$/mws/repeatCardPayment.php" />
+        <option value="$PROJECT_DIR$/mws/cancelPayment.php" />
+        <option value="$PROJECT_DIR$/mws/MWS.php" />
+        <option value="$PROJECT_DIR$/paymentForm.html" />
+        <option value="$PROJECT_DIR$/YaMoneyCommonHttpProtocol.php" />
+      </list>
+    </option>
+  </component>
+  <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
+  <component name="ProjectFrameBounds">
+    <option name="x" value="-8" />
+    <option name="y" value="-8" />
+    <option name="width" value="1936" />
+    <option name="height" value="1056" />
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <OptionsSetting value="true" id="Add" />
+    <OptionsSetting value="true" id="Remove" />
+    <OptionsSetting value="true" id="Checkout" />
+    <OptionsSetting value="true" id="Update" />
+    <OptionsSetting value="true" id="Status" />
+    <OptionsSetting value="true" id="Edit" />
+    <ConfirmationsSetting value="0" id="Add" />
+    <ConfirmationsSetting value="0" id="Remove" />
+  </component>
+  <component name="ProjectReloadState">
+    <option name="STATE" value="0" />
+  </component>
+  <component name="ProjectView">
+    <navigator currentView="ProjectPane" proportions="" version="1" splitterProportion="0.5">
+      <flattenPackages />
+      <showMembers />
+      <showModules />
+      <showLibraryContents />
+      <hideEmptyPackages />
+      <abbreviatePackageNames />
+      <autoscrollToSource />
+      <autoscrollFromSource />
+      <sortByType />
+    </navigator>
+    <panes>
+      <pane id="PackagesPane" />
+      <pane id="ProjectPane">
+        <subPane>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="shop" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="shop" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="shop" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="shop" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="shop" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="mws" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+        </subPane>
+      </pane>
+      <pane id="Scope" />
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="GoToFile.includeJavaFiles" value="false" />
+    <property name="options.splitter.main.proportions" value="0.3" />
+    <property name="WebServerToolWindowPanel.toolwindow.show.permissions" value="false" />
+    <property name="options.lastSelected" value="project.propVCSSupport.Mappings" />
+    <property name="MemberChooser.sorted" value="false" />
+    <property name="WebServerToolWindowPanel.toolwindow.show.size" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="DefaultHtmlFileTemplate" value="Html5" />
+    <property name="WebServerToolWindowPanel.toolwindow.highlight.mappings" value="true" />
+    <property name="MemberChooser.copyJavadoc" value="false" />
+    <property name="GoToClass.toSaveIncludeLibraries" value="false" />
+    <property name="WebServerToolWindowFactoryState" value="true" />
+    <property name="WebServerToolWindowPanel.toolwindow.show.date" value="false" />
+    <property name="MemberChooser.showClasses" value="true" />
+    <property name="WebServerToolWindowPanel.toolwindow.highlight.symlinks" value="true" />
+    <property name="GoToClass.includeLibraries" value="false" />
+    <property name="options.searchVisible" value="true" />
+    <property name="options.splitter.details.proportions" value="0.2" />
+  </component>
+  <component name="PublishConfig" serverName="BaibikShop" serverId="9aa3e039-b1a6-4cb4-8ffc-a1349f4aa345">
+    <servers>
+      <server id="9aa3e039-b1a6-4cb4-8ffc-a1349f4aa345">
+        <serverdata>
+          <mappings>
+            <mapping deploy="/" local="$PROJECT_DIR$" />
+          </mappings>
+        </serverdata>
+      </server>
+    </servers>
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\xampp\htdocs\shop\mws" />
+      <recent name="C:\xampp\htdocs\shop" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\xampp\htdocs\shop\mws" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration default="true" type="#org.jetbrains.idea.devkit.run.PluginConfigurationType" factoryName="Plugin">
+      <module name="" />
+      <option name="VM_PARAMETERS" value="-Xmx512m -Xms256m -XX:MaxPermSize=250m" />
+      <option name="PROGRAM_PARAMETERS" />
+      <method />
+    </configuration>
+    <configuration default="true" type="PHPUnitRunConfigurationType" factoryName="PHPUnit">
+      <TestRunner />
+      <method />
+    </configuration>
+    <configuration default="true" type="Remote" factoryName="Remote">
+      <option name="USE_SOCKET_TRANSPORT" value="true" />
+      <option name="SERVER_MODE" value="false" />
+      <option name="SHMEM_ADDRESS" value="javadebug" />
+      <option name="HOST" value="localhost" />
+      <option name="PORT" value="5005" />
+      <method />
+    </configuration>
+    <configuration default="true" type="PhpLocalRunConfigurationType" factoryName="PHP Console">
+      <method />
+    </configuration>
+    <configuration default="true" type="TestNG" factoryName="TestNG">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <module name="" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="SUITE_NAME" />
+      <option name="PACKAGE_NAME" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="METHOD_NAME" />
+      <option name="GROUP_NAME" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="OUTPUT_DIRECTORY" />
+      <option name="ANNOTATION_TYPE" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="moduleWithDependencies" />
+      </option>
+      <option name="USE_DEFAULT_REPORTERS" value="false" />
+      <option name="PROPERTIES_FILE" />
+      <envs />
+      <properties />
+      <listeners />
+      <method />
+    </configuration>
+    <configuration default="true" type="Applet" factoryName="Applet">
+      <module name="" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="HTML_FILE_NAME" />
+      <option name="HTML_USED" value="false" />
+      <option name="WIDTH" value="400" />
+      <option name="HEIGHT" value="300" />
+      <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
+      <option name="VM_PARAMETERS" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <method />
+    </configuration>
+    <configuration default="true" type="Application" factoryName="Application">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="ENABLE_SWING_INSPECTOR" value="false" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <module name="" />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="JavascriptDebugSession" factoryName="Local" singleton="true">
+      <JSDebuggerConfigurationSettings>
+        <option name="engineId" value="embedded" />
+        <option name="fileUrl" />
+      </JSDebuggerConfigurationSettings>
+      <method />
+    </configuration>
+    <configuration default="true" type="JUnit" factoryName="JUnit">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <module name="" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="METHOD_NAME" />
+      <option name="TEST_OBJECT" value="class" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="moduleWithDependencies" />
+      </option>
+      <envs />
+      <patterns />
+      <method />
+    </configuration>
+    <configuration default="true" type="PhpUnitRemoteRunConfigurationType" factoryName="PHPUnit on Server" server_id="9aa3e039-b1a6-4cb4-8ffc-a1349f4aa345" server_name="BaibikShop">
+      <method />
+    </configuration>
+    <list size="0" />
+    <configuration name="&lt;template&gt;" type="WebApp" default="true" selected="false">
+      <Host>localhost</Host>
+      <Port>5050</Port>
+    </configuration>
+  </component>
+  <component name="ShelveChangesManager" show_recycled="false" />
+  <component name="SvnConfiguration" maxAnnotateRevisions="500" myUseAcceleration="nothing" myAutoUpdateAfterCommit="false" cleanupOnStartRun="false" SSL_PROTOCOLS="all">
+    <option name="USER" value="" />
+    <option name="PASSWORD" value="" />
+    <option name="mySSHConnectionTimeout" value="30000" />
+    <option name="mySSHReadTimeout" value="30000" />
+    <option name="LAST_MERGED_REVISION" />
+    <option name="MERGE_DRY_RUN" value="false" />
+    <option name="MERGE_DIFF_USE_ANCESTRY" value="true" />
+    <option name="UPDATE_LOCK_ON_DEMAND" value="false" />
+    <option name="IGNORE_SPACES_IN_MERGE" value="false" />
+    <option name="CHECK_NESTED_FOR_QUICK_MERGE" value="false" />
+    <option name="IGNORE_SPACES_IN_ANNOTATE" value="true" />
+    <option name="SHOW_MERGE_SOURCES_IN_ANNOTATE" value="true" />
+    <option name="FORCE_UPDATE" value="false" />
+    <option name="IGNORE_EXTERNALS" value="false" />
+    <myIsUseDefaultProxy>false</myIsUseDefaultProxy>
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="472cd838-2100-4c05-9431-7ca6b7f6edfb" name="Default" comment="" />
+      <created>1425422313012</created>
+      <updated>1425422313012</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <editor active="false" />
+    <layout>
+      <window_info id="Changes" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32962137" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="JetGradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32977587" sideWeight="0.84187084" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Remote Host" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.10992529" sideWeight="0.6703786" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="IDEtalk Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.2414966" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="IDEtalk" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="CDI" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32977587" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.10512273" sideWeight="0.6703786" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="File Transfer" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.15812917" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32962137" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+    </layout>
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="OFFER_MOVE_TO_ANOTHER_CHANGELIST_ON_PARTIAL_COMMIT" value="true" />
+    <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="true" />
+    <option name="CHECK_NEW_TODO" value="true" />
+    <option name="myTodoPanelSettings">
+      <value>
+        <are-packages-shown value="false" />
+        <are-modules-shown value="false" />
+        <flatten-packages value="false" />
+        <is-autoscroll-to-source value="false" />
+      </value>
+    </option>
+    <option name="PERFORM_UPDATE_IN_BACKGROUND" value="true" />
+    <option name="PERFORM_COMMIT_IN_BACKGROUND" value="true" />
+    <option name="PERFORM_EDIT_IN_BACKGROUND" value="true" />
+    <option name="PERFORM_CHECKOUT_IN_BACKGROUND" value="true" />
+    <option name="PERFORM_ADD_REMOVE_IN_BACKGROUND" value="true" />
+    <option name="PERFORM_ROLLBACK_IN_BACKGROUND" value="false" />
+    <option name="CHECK_LOCALLY_CHANGED_CONFLICTS_IN_BACKGROUND" value="false" />
+    <option name="CHANGED_ON_SERVER_INTERVAL" value="60" />
+    <option name="SHOW_ONLY_CHANGED_IN_SELECTION_DIFF" value="true" />
+    <option name="CHECK_COMMIT_MESSAGE_SPELLING" value="true" />
+    <option name="DEFAULT_PATCH_EXTENSION" value="patch" />
+    <option name="SHORT_DIFF_HORIZONTALLY" value="true" />
+    <option name="SHORT_DIFF_EXTRA_LINES" value="2" />
+    <option name="SOFT_WRAPS_IN_SHORT_DIFF" value="true" />
+    <option name="INCLUDE_TEXT_INTO_PATCH" value="false" />
+    <option name="INCLUDE_TEXT_INTO_SHELF" value="false" />
+    <option name="SHOW_FILE_HISTORY_DETAILS" value="true" />
+    <option name="SHOW_VCS_ERROR_NOTIFICATIONS" value="true" />
+    <option name="SHOW_DIRTY_RECURSIVELY" value="false" />
+    <option name="LIMIT_HISTORY" value="true" />
+    <option name="MAXIMUM_HISTORY_ROWS" value="1000" />
+    <option name="UPDATE_FILTER_SCOPE_NAME" />
+    <option name="USE_COMMIT_MESSAGE_MARGIN" value="false" />
+    <option name="COMMIT_MESSAGE_MARGIN_SIZE" value="72" />
+    <option name="WRAP_WHEN_TYPING_REACHES_RIGHT_MARGIN" value="false" />
+    <option name="FORCE_NON_EMPTY_COMMENT" value="false" />
+    <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="false" />
+    <option name="LAST_COMMIT_MESSAGE" />
+    <option name="MAKE_NEW_CHANGELIST_ACTIVE" value="false" />
+    <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="false" />
+    <option name="CHECK_FILES_UP_TO_DATE_BEFORE_COMMIT" value="false" />
+    <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="false" />
+    <option name="REFORMAT_BEFORE_FILE_COMMIT" value="false" />
+    <option name="FILE_HISTORY_DIALOG_COMMENTS_SPLITTER_PROPORTION" value="0.8" />
+    <option name="FILE_HISTORY_DIALOG_SPLITTER_PROPORTION" value="0.5" />
+    <option name="ACTIVE_VCS_NAME" />
+    <option name="UPDATE_GROUP_BY_PACKAGES" value="false" />
+    <option name="UPDATE_GROUP_BY_CHANGELIST" value="false" />
+    <option name="UPDATE_FILTER_BY_SCOPE" value="false" />
+    <option name="SHOW_FILE_HISTORY_AS_TREE" value="false" />
+    <option name="FILE_HISTORY_SPLITTER_PROPORTION" value="0.6" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager />
+  </component>
+  <component name="antWorkspaceConfiguration">
+    <option name="IS_AUTOSCROLL_TO_SOURCE" value="false" />
+    <option name="FILTER_TARGETS" value="false" />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="jar://$USER_HOME$/.IntelliJIdea12/config/plugins/php/lib/php.jar!/com/jetbrains/php/lang/psi/stubs/data/standard_6.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="1029" column="9" selection-start="33782" selection-end="33782" vertical-scroll-proportion="-8.730769" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Log.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="21" column="0" selection-start="299" selection-end="299" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sendCheckOrder.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="16" column="69" selection-start="960" selection-end="960" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mws/listOrders.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="19" column="7" selection-start="319" selection-end="388" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/log.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="371" column="30" selection-start="27755" selection-end="27755" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mws/returnPayment.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="18" column="50" selection-start="338" selection-end="439" vertical-scroll-proportion="-11.769231">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mws/confirmPayment.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mws/repeatCardPayment.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="5" column="0" selection-start="79" selection-end="79" vertical-scroll-proportion="-3.2692308">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mws/cancelPayment.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="18" column="51" selection-start="389" selection-end="389" vertical-scroll-proportion="-11.769231">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mws/MWS.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="118" column="44" selection-start="3761" selection-end="3761" vertical-scroll-proportion="-14.538462">
+          <folding>
+            <marker date="1427530394246" expanded="true" signature="1711:1928" placeholder="..." />
+            <marker date="1427530394246" expanded="true" signature="1711:1783" placeholder="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/paymentForm.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="27" column="54" selection-start="1077" selection-end="1077" vertical-scroll-proportion="-17.653847">
+          <folding>
+            <element signature="n#style#0;n#iframe#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Utils.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="14" column="27" selection-start="218" selection-end="218" vertical-scroll-proportion="-5.230769">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/checkOrder.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="9" column="36" selection-start="249" selection-end="249" vertical-scroll-proportion="-5.8846154">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/paymentAviso.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="9" column="40" selection-start="255" selection-end="255" vertical-scroll-proportion="-5.8846154">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Settings.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="23" column="100" selection-start="573" selection-end="586" vertical-scroll-proportion="-11.115385">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/YaMoneyCommonHttpProtocol.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="141" column="41" selection-start="5214" selection-end="5214" vertical-scroll-proportion="1.1672727">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>
+

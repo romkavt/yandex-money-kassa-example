@@ -1,0 +1,400 @@
+[2015-03-24 10:11:27] Start returnPayment
+[2015-03-24 10:11:27] open_ssl_comand: openssl smime -sign -signer C:\xampp\htdocs\shop/mws/baibik.cer -inkey C:\xampp\htdocs\shop/mws/private.key -nochain -nocerts -outform PEM -nodetach -passin pass:123456
+WARNING: can't open config file: /etc/ssl/openssl.cnf
+Loading 'screen' into random state - done
+[2015-03-24 10:11:29] -----BEGIN PKCS7-----
+MIIDewYJKoZIhvcNAQcCoIIDbDCCA2gCAQExCzAJBgUrDgMCGgUAMIH4BgkqhkiG
+9w0BBwGggeoEgec8P3htbCB2ZXJzaW9uPSIxLjAiIGVuY29kaW5nPSJVVEYtOCI/
+Pg0KICAgICAgICA8cmV0dXJuUGF5bWVudFJlcXVlc3QNCiAgICAgICAgICAgIGNs
+aWVudE9yZGVySWQ9IjE0MjcxODgyODciDQogICAgICAgICAgICByZXF1ZXN0RFQ9
+IjIwMTUtMDMtMjRUMTA6MTE6MjcuMDAwKzAxOjAwIg0KICAgICAgICAgICAgaW52
+b2ljZUlkPSIyMDAwMDAwNDMyMDU3Ig0KICAgICAgICAgICAgc2hvcElkPSIxNTEi
+Lz4xggJZMIICVQIBATBXMEkxCzAJBgNVBAYTAlJVMRgwFgYDVQQKEw9QUyBZYW5k
+ZXguTW9uZXkxIDAeBgNVBAMTF1lhbmRleCBNb25leSBJc3N1aW5nIENBAgooFM+j
+AAIAADxoMAkGBSsOAwIaBQCggdgwGAYJKoZIhvcNAQkDMQsGCSqGSIb3DQEHATAc
+BgkqhkiG9w0BCQUxDxcNMTUwMzI0MDkxMTI4WjAjBgkqhkiG9w0BCQQxFgQUANgU
+UNlpSngdqDKYeDkDyllHNYAweQYJKoZIhvcNAQkPMWwwajALBglghkgBZQMEASow
+CwYJYIZIAWUDBAEWMAsGCWCGSAFlAwQBAjAKBggqhkiG9w0DBzAOBggqhkiG9w0D
+AgICAIAwDQYIKoZIhvcNAwICAUAwBwYFKw4DAgcwDQYIKoZIhvcNAwICASgwDQYJ
+KoZIhvcNAQEBBQAEggEAnRDwuqE51v2injS0czUFJnB7mtbLq4xq7jhK4h+Oo1FO
+XyUkUq9N0O2L+5dXM4/wcQhgobZr9n+36NV1yQ+0CzXUosWPsKcl9RGRUSmRIsBb
+rmvP1DhAFxuNFOIM4zuEhILXEpWa8RT7MLKdb4P0/3dGZKl4LPqIEeqmby+3IZkN
+yeXT2ZHBTj2hoSwMT750AlYxqVfVUuOvPNfK7Bs5dXSgSV2gdMRQwC7nz2axPFJj
+Mzo0B08m68nc8CrSfhsHWjJE9m7pm3vNSFZ+z805T2g8ab6aa6kDNew/1bYzf/fK
+GN/8Zy2SR1SUmmInjKAlXPHiIO7bFv5QSXhT20zkuQ==
+-----END PKCS7-----
+
+[2015-03-24 10:11:29] <?xml version="1.0" encoding="UTF-8"?><returnPaymentResponse status="3" error="402" processedDT="2015-03-24T12:11:29.242+03:00" techMessage="Неверное значение параметра amount" clientOrderId="unknown"/>
+[2015-03-24 10:11:30] Start returnPayment
+[2015-03-24 10:11:30] open_ssl_comand: openssl smime -sign -signer C:\xampp\htdocs\shop/mws/baibik.cer -inkey C:\xampp\htdocs\shop/mws/private.key -nochain -nocerts -outform PEM -nodetach -passin pass:123456
+WARNING: can't open config file: /etc/ssl/openssl.cnf
+Loading 'screen' into random state - done
+[2015-03-24 10:11:32] -----BEGIN PKCS7-----
+MIIDewYJKoZIhvcNAQcCoIIDbDCCA2gCAQExCzAJBgUrDgMCGgUAMIH4BgkqhkiG
+9w0BBwGggeoEgec8P3htbCB2ZXJzaW9uPSIxLjAiIGVuY29kaW5nPSJVVEYtOCI/
+Pg0KICAgICAgICA8cmV0dXJuUGF5bWVudFJlcXVlc3QNCiAgICAgICAgICAgIGNs
+aWVudE9yZGVySWQ9IjE0MjcxODgyOTAiDQogICAgICAgICAgICByZXF1ZXN0RFQ9
+IjIwMTUtMDMtMjRUMTA6MTE6MzAuMDAwKzAxOjAwIg0KICAgICAgICAgICAgaW52
+b2ljZUlkPSIyMDAwMDAwNDMyMDU3Ig0KICAgICAgICAgICAgc2hvcElkPSIxNTEi
+Lz4xggJZMIICVQIBATBXMEkxCzAJBgNVBAYTAlJVMRgwFgYDVQQKEw9QUyBZYW5k
+ZXguTW9uZXkxIDAeBgNVBAMTF1lhbmRleCBNb25leSBJc3N1aW5nIENBAgooFM+j
+AAIAADxoMAkGBSsOAwIaBQCggdgwGAYJKoZIhvcNAQkDMQsGCSqGSIb3DQEHATAc
+BgkqhkiG9w0BCQUxDxcNMTUwMzI0MDkxMTMyWjAjBgkqhkiG9w0BCQQxFgQUOOoD
+1dna7RGcjKfJxOBXHk4CvWEweQYJKoZIhvcNAQkPMWwwajALBglghkgBZQMEASow
+CwYJYIZIAWUDBAEWMAsGCWCGSAFlAwQBAjAKBggqhkiG9w0DBzAOBggqhkiG9w0D
+AgICAIAwDQYIKoZIhvcNAwICAUAwBwYFKw4DAgcwDQYIKoZIhvcNAwICASgwDQYJ
+KoZIhvcNAQEBBQAEggEAVjk/rWXD/KEL4A0DDxRTEAp3LhWB9BVwwTVzxT/NHW0f
+RqLNwm7TpacxJDmi7w8TvCvag4ijJclnnjkYz/YgGp/kllPd7v4eToEy7ELAVugR
+eStN/glp3MqGA56HMF5x7wmrnpLX2JdRmUCsKAj9X6hLXKQm2msgHBNgAv0cIGXe
+g+l+1Qrxabm9mrGmACfdAVG85os3BXFFA7pNhPPJ8RwquVVHbz6V1bkS+Kr+qT3u
+5guWlqm9W7ekoMaWUuyGbzQOV/xDZbRxxPQlUVI/GKC58qoYS6RKnDbNgorr1yOL
+x/h3xWXWVfVnx6rCgfC+DvOKiLeIdho6utnkdcD79A==
+-----END PKCS7-----
+
+[2015-03-24 10:11:32] <?xml version="1.0" encoding="UTF-8"?><returnPaymentResponse status="3" error="402" processedDT="2015-03-24T12:11:32.975+03:00" techMessage="Неверное значение параметра amount" clientOrderId="unknown"/>
+[2015-03-24 11:18:04] Start listOrder
+[2015-03-24 11:18:04] Request params:
+[2015-03-24 11:18:04] Array
+(
+    [requestDT] => 2015-03-24T11:18:04.000Z
+    [outputFormat] => XML
+    [shopId] => 151
+    [orderCreatedDatetimeLessOrEqual] => 2015-03-24T11:18:04.000Z
+)
+
+[2015-03-24 11:18:04] <?xml version="1.0" encoding="UTF-8" ?><listOrdersResponse status="0" error="0" processedDT="2015-03-24T13:18:04.988+03:00" orderCount="2" techMessage="Успех"><order shopId="151" shopName="Тестовый магазин" articleId="151" articleName="Байбик-Шоп" invoiceId="2000000432057" orderNumber="2000000432057" customerNumber="100500" createdDatetime="2015-03-24T10:19:02.629+03:00" paid="false" orderSumAmount="100.00" orderSumCurrencyPaycash="10643" orderSumBankPaycash="1003" shopSumAmount="99.00" shopSumCurrencyPaycash="10643" shopSumBankPaycash="1003" payerCode="4100322344779" paymentType="PC" agentId="" uniLabel="1ca3237f-0001-5000-8000-00000003d4af"></order><order shopId="151" shopName="Тестовый магазин" articleId="151" articleName="Байбик-Шоп" invoiceId="2000000432066" orderNumber="2000000432066" paymentSystemOrderNumber="480497224775004008" customerNumber="100500" createdDatetime="2015-03-24T10:26:50.792+03:00" paid="true" orderSumAmount="100.00" orderSumCurrencyPaycash="10643" orderSumBankPaycash="1003" paidSumAmount="100.00" paidSumCurrencyPaycash="10643" paidSumBankPaycash="1003" receivedSumAmount="100.00" receivedSumCurrencyPaycash="10643" receivedSumBankPaycash="1003" shopSumAmount="99.00" shopSumCurrencyPaycash="10643" shopSumBankPaycash="1003" paymentDatetime="2015-03-24T10:27:04.775+03:00" paymentAuthorizationTime="480497224775004008" payerCode="4100322344779" payerAddress="77.75.157.163" payeeCode="410037493939" paymentSystemDatetime="2015-03-24T10:27:04.775+03:00" avisoReceivedDatetime="2015-03-24T10:27:05.317+03:00" avisoStatus="1000" paymentType="PC" agentId="" uniLabel="1ca32579-0001-5000-8000-00000003d4b7"></order></listOrdersResponse>
+[2015-03-24 11:19:34] Start listReturns
+[2015-03-24 11:19:34] Request params:
+[2015-03-24 11:19:34] Array
+(
+    [requestDT] => 2015-03-24T11:19:34.000Z
+    [outputFormat] => XML
+    [shopId] => 151
+    [from] => 2015-01-01T00:00:00.000Z
+    [till] => 2015-03-24T11:19:34.000Z
+)
+
+[2015-03-24 11:19:34] <?xml version="1.0" encoding="UTF-8" ?><listReturnsResponse status="0" error="0" processedDT="2015-03-24T13:19:34.992+03:00" techMessage="Успех"></listReturnsResponse>
+[2015-03-24 11:19:36] Start listOrder
+[2015-03-24 11:19:36] Request params:
+[2015-03-24 11:19:36] Array
+(
+    [requestDT] => 2015-03-24T11:19:36.000Z
+    [outputFormat] => XML
+    [shopId] => 151
+    [orderCreatedDatetimeLessOrEqual] => 2015-03-24T11:19:36.000Z
+)
+
+[2015-03-24 11:19:36] <?xml version="1.0" encoding="UTF-8" ?><listOrdersResponse status="0" error="0" processedDT="2015-03-24T13:19:36.359+03:00" orderCount="2" techMessage="Успех"><order shopId="151" shopName="Тестовый магазин" articleId="151" articleName="Байбик-Шоп" invoiceId="2000000432057" orderNumber="2000000432057" customerNumber="100500" createdDatetime="2015-03-24T10:19:02.629+03:00" paid="false" orderSumAmount="100.00" orderSumCurrencyPaycash="10643" orderSumBankPaycash="1003" shopSumAmount="99.00" shopSumCurrencyPaycash="10643" shopSumBankPaycash="1003" payerCode="4100322344779" paymentType="PC" agentId="" uniLabel="1ca3237f-0001-5000-8000-00000003d4af"></order><order shopId="151" shopName="Тестовый магазин" articleId="151" articleName="Байбик-Шоп" invoiceId="2000000432066" orderNumber="2000000432066" paymentSystemOrderNumber="480497224775004008" customerNumber="100500" createdDatetime="2015-03-24T10:26:50.792+03:00" paid="true" orderSumAmount="100.00" orderSumCurrencyPaycash="10643" orderSumBankPaycash="1003" paidSumAmount="100.00" paidSumCurrencyPaycash="10643" paidSumBankPaycash="1003" receivedSumAmount="100.00" receivedSumCurrencyPaycash="10643" receivedSumBankPaycash="1003" shopSumAmount="99.00" shopSumCurrencyPaycash="10643" shopSumBankPaycash="1003" paymentDatetime="2015-03-24T10:27:04.775+03:00" paymentAuthorizationTime="480497224775004008" payerCode="4100322344779" payerAddress="77.75.157.163" payeeCode="410037493939" paymentSystemDatetime="2015-03-24T10:27:04.775+03:00" avisoReceivedDatetime="2015-03-24T10:27:05.317+03:00" avisoStatus="1000" paymentType="PC" agentId="" uniLabel="1ca32579-0001-5000-8000-00000003d4b7"></order></listOrdersResponse>
+[2015-03-24 11:19:40] Start returnPayment
+[2015-03-24 11:19:40] open_ssl_comand: openssl smime -sign -signer C:\xampp\htdocs\shop/mws/baibik.cer -inkey C:\xampp\htdocs\shop/mws/private.key -nochain -nocerts -outform PEM -nodetach -passin pass:123456
+WARNING: can't open config file: /etc/ssl/openssl.cnf
+Loading 'screen' into random state - done
+[2015-03-24 11:19:42] -----BEGIN PKCS7-----
+MIIDygYJKoZIhvcNAQcCoIIDuzCCA7cCAQExCzAJBgUrDgMCGgUAMIIBRgYJKoZI
+hvcNAQcBoIIBNwSCATM8P3htbCB2ZXJzaW9uPSIxLjAiIGVuY29kaW5nPSJVVEYt
+OCI/Pg0KICAgICAgICA8cmV0dXJuUGF5bWVudFJlcXVlc3QNCiAgICAgICAgICAg
+IGNsaWVudE9yZGVySWQ9IjE0MjcxOTIzODAiDQogICAgICAgICAgICByZXF1ZXN0
+RFQ9IjIwMTUtMDMtMjRUMTE6MTk6NDAuMDAwKzAxOjAwIg0KICAgICAgICAgICAg
+aW52b2ljZUlkPSIyMDAwMDAwNDMyMDU3Ig0KICAgICAgICAgICAgc2hvcElkPSIx
+NTEiDQogICAgICAgICAgICBhbW91bnQ9IjIwMDAwMDA0MzIwNTciDQogICAgICAg
+ICAgICBjYXVzZT0i0J3QtdGCINGC0L7QstCw0YDQsCI+MYICWTCCAlUCAQEwVzBJ
+MQswCQYDVQQGEwJSVTEYMBYGA1UEChMPUFMgWWFuZGV4Lk1vbmV5MSAwHgYDVQQD
+ExdZYW5kZXggTW9uZXkgSXNzdWluZyBDQQIKKBTPowACAAA8aDAJBgUrDgMCGgUA
+oIHYMBgGCSqGSIb3DQEJAzELBgkqhkiG9w0BBwEwHAYJKoZIhvcNAQkFMQ8XDTE1
+MDMyNDEwMTk0MlowIwYJKoZIhvcNAQkEMRYEFCr75HsXPrOcmlzgFsmtdxzVcfrQ
+MHkGCSqGSIb3DQEJDzFsMGowCwYJYIZIAWUDBAEqMAsGCWCGSAFlAwQBFjALBglg
+hkgBZQMEAQIwCgYIKoZIhvcNAwcwDgYIKoZIhvcNAwICAgCAMA0GCCqGSIb3DQMC
+AgFAMAcGBSsOAwIHMA0GCCqGSIb3DQMCAgEoMA0GCSqGSIb3DQEBAQUABIIBAHm9
+3sHQn92RuLQ6I0jQO4a1btvsAk/8YIdHFQfowMedOvCr8NtXQItqpqUT7YdQrD8B
+ym1WXEdNR6VYfDZmm2ACz3OjThbUIxJ1NVV+OnmXL2fO/c+YSlUlHfgmHqgR5s9b
+VgN6c2dBMQJF3hlIOALPKTK6pIQNxM5qHOI2EHU80WXmR2/WVfylhNNhASI+3ID0
+3PJ/HkzbBRRE/b5ttqSXHDEBMTtrWKTwGLxqSo12rKIg4dtQehWPuI2xfF7FCaHH
+euK+tYGIDdHZmIOy5uX4Fhp/nztXiA5XWrOIcIjJZVxA84K0MJkZ9+aVpHiyBMUx
+Ew4XXL3YY+bu5dcuw/c=
+-----END PKCS7-----
+
+[2015-03-24 11:19:42] <?xml version="1.0" encoding="UTF-8"?><returnPaymentResponse status="3" error="10" processedDT="2015-03-24T13:19:42.631+03:00" techMessage="Ошибка синтаксического разбора XML документа. Синтаксис документа нарушен, либо отсутствуют обязательные элементы XML" clientOrderId="unknown"/>
+[2015-03-24 11:20:36] Start returnPayment
+[2015-03-24 11:20:36] open_ssl_comand: openssl smime -sign -signer C:\xampp\htdocs\shop/mws/baibik.cer -inkey C:\xampp\htdocs\shop/mws/private.key -nochain -nocerts -outform PEM -nodetach -passin pass:123456
+WARNING: can't open config file: /etc/ssl/openssl.cnf
+Loading 'screen' into random state - done
+[2015-03-24 11:20:38] -----BEGIN PKCS7-----
+MIIDygYJKoZIhvcNAQcCoIIDuzCCA7cCAQExCzAJBgUrDgMCGgUAMIIBRgYJKoZI
+hvcNAQcBoIIBNwSCATM8P3htbCB2ZXJzaW9uPSIxLjAiIGVuY29kaW5nPSJVVEYt
+OCI/Pg0KICAgICAgICA8cmV0dXJuUGF5bWVudFJlcXVlc3QNCiAgICAgICAgICAg
+IGNsaWVudE9yZGVySWQ9IjE0MjcxOTI0MzYiDQogICAgICAgICAgICByZXF1ZXN0
+RFQ9IjIwMTUtMDMtMjRUMTE6MjA6MzYuMDAwKzAxOjAwIg0KICAgICAgICAgICAg
+aW52b2ljZUlkPSIyMDAwMDAwNDMyMDU3Ig0KICAgICAgICAgICAgc2hvcElkPSIx
+NTEiDQogICAgICAgICAgICBhbW91bnQ9IjIwMDAwMDA0MzIwNTciDQogICAgICAg
+ICAgICBjYXVzZT0i0J3QtdGCINGC0L7QstCw0YDQsCI+MYICWTCCAlUCAQEwVzBJ
+MQswCQYDVQQGEwJSVTEYMBYGA1UEChMPUFMgWWFuZGV4Lk1vbmV5MSAwHgYDVQQD
+ExdZYW5kZXggTW9uZXkgSXNzdWluZyBDQQIKKBTPowACAAA8aDAJBgUrDgMCGgUA
+oIHYMBgGCSqGSIb3DQEJAzELBgkqhkiG9w0BBwEwHAYJKoZIhvcNAQkFMQ8XDTE1
+MDMyNDEwMjAzOFowIwYJKoZIhvcNAQkEMRYEFNvVuDYnO/NNQzloL4iHobY8dnZu
+MHkGCSqGSIb3DQEJDzFsMGowCwYJYIZIAWUDBAEqMAsGCWCGSAFlAwQBFjALBglg
+hkgBZQMEAQIwCgYIKoZIhvcNAwcwDgYIKoZIhvcNAwICAgCAMA0GCCqGSIb3DQMC
+AgFAMAcGBSsOAwIHMA0GCCqGSIb3DQMCAgEoMA0GCSqGSIb3DQEBAQUABIIBAHrQ
+zD5auJXlBxRndk11JekF2z5Jd+280ij1QkEjWi9ihqeBGMDPNRl+zmqEsD/Re0ZJ
+2CLLSEV5fW4ZASqrwVbUN/M6hjDqGYW63+cHGTxVnIzjYM0FixPWIRI5x0peB2N+
+PW9be9XwRtfF7672NIQfmU3u0ki/tawppQdfQ8RFtrCc0eTGynMbvelMBHJf6RCA
+ppQjDsdoDinivdV+ygDA/Ujtm/j9kaMIOjYtWzrZupYhcG5lr2Zb34R1Jj9Nz2DP
+4Cacy1UhOp/O49JmN2TTbx3HzCC2enVNDZXCnq02oPdfNELS9/rO4O08lKz16UJG
+DuMYWE+xRzjgIFrwt7c=
+-----END PKCS7-----
+
+[2015-03-24 11:20:38] <?xml version="1.0" encoding="UTF-8"?><returnPaymentResponse status="3" error="10" processedDT="2015-03-24T13:20:38.705+03:00" techMessage="Ошибка синтаксического разбора XML документа. Синтаксис документа нарушен, либо отсутствуют обязательные элементы XML" clientOrderId="unknown"/>
+[2015-03-24 11:21:09] Start returnPayment
+[2015-03-24 11:21:09] open_ssl_comand: openssl smime -sign -signer C:\xampp\htdocs\shop/mws/baibik.cer -inkey C:\xampp\htdocs\shop/mws/private.key -nochain -nocerts -outform PEM -nodetach -passin pass:123456
+WARNING: can't open config file: /etc/ssl/openssl.cnf
+Loading 'screen' into random state - done
+[2015-03-24 11:21:11] -----BEGIN PKCS7-----
+MIIDygYJKoZIhvcNAQcCoIIDuzCCA7cCAQExCzAJBgUrDgMCGgUAMIIBRgYJKoZI
+hvcNAQcBoIIBNwSCATM8P3htbCB2ZXJzaW9uPSIxLjAiIGVuY29kaW5nPSJVVEYt
+OCI/Pg0KICAgICAgICA8cmV0dXJuUGF5bWVudFJlcXVlc3QNCiAgICAgICAgICAg
+IGNsaWVudE9yZGVySWQ9IjE0MjcxOTI0NjkiDQogICAgICAgICAgICByZXF1ZXN0
+RFQ9IjIwMTUtMDMtMjRUMTE6MjE6MDkuMDAwKzAxOjAwIg0KICAgICAgICAgICAg
+aW52b2ljZUlkPSIyMDAwMDAwNDMyMDU3Ig0KICAgICAgICAgICAgc2hvcElkPSIx
+NTEiDQogICAgICAgICAgICBhbW91bnQ9IjIwMDAwMDA0MzIwNTciDQogICAgICAg
+ICAgICBjYXVzZT0i0J3QtdGCINGC0L7QstCw0YDQsCI+MYICWTCCAlUCAQEwVzBJ
+MQswCQYDVQQGEwJSVTEYMBYGA1UEChMPUFMgWWFuZGV4Lk1vbmV5MSAwHgYDVQQD
+ExdZYW5kZXggTW9uZXkgSXNzdWluZyBDQQIKKBTPowACAAA8aDAJBgUrDgMCGgUA
+oIHYMBgGCSqGSIb3DQEJAzELBgkqhkiG9w0BBwEwHAYJKoZIhvcNAQkFMQ8XDTE1
+MDMyNDEwMjExMVowIwYJKoZIhvcNAQkEMRYEFOU5X9R5yIvYY1WJI0O9qrw0zPWC
+MHkGCSqGSIb3DQEJDzFsMGowCwYJYIZIAWUDBAEqMAsGCWCGSAFlAwQBFjALBglg
+hkgBZQMEAQIwCgYIKoZIhvcNAwcwDgYIKoZIhvcNAwICAgCAMA0GCCqGSIb3DQMC
+AgFAMAcGBSsOAwIHMA0GCCqGSIb3DQMCAgEoMA0GCSqGSIb3DQEBAQUABIIBACmO
+0MaXNXpg+4W7fhukasNA3qHfw8u7GN7gCb5pBgJK8OXWCJzrqO7npAMGDTrhJeNy
+7rg//ROePyVXH8qS/xlSEqKHfacWOrw3L4qDxyocPIO/9rDB0Z92q314bwDIj9Th
+p0ceLwopxBFvTcd1IjNSOXSjR82dPJfcVRPebGtAXfd8sVjKeo707bYjGkUiE1LF
+8CeXverqNkmINmiN7BRy2LDlVD9khYGPzv3KxaSkR6n7n2XEB9Chxwhq2rL6wmk+
+GhwQxmE9MpaTDoWUYNTEAOe2HimMZMs1AYaxr5CZamPMAsdIsd8YH0OdnaDmpg1P
+l5qvyqIB3TMWR25e0fg=
+-----END PKCS7-----
+
+[2015-03-24 11:21:11] <?xml version="1.0" encoding="UTF-8"?><returnPaymentResponse status="3" error="10" processedDT="2015-03-24T13:21:11.865+03:00" techMessage="Ошибка синтаксического разбора XML документа. Синтаксис документа нарушен, либо отсутствуют обязательные элементы XML" clientOrderId="unknown"/>
+[2015-03-24 11:25:55] Start listOrder
+[2015-03-24 11:25:55] Request params:
+[2015-03-24 11:25:55] Array
+(
+    [requestDT] => 2015-03-24T11:25:55.000Z
+    [outputFormat] => XML
+    [shopId] => 151
+    [orderCreatedDatetimeLessOrEqual] => 2015-03-24T11:25:55.000Z
+)
+
+[2015-03-24 11:25:55] <?xml version="1.0" encoding="UTF-8" ?><listOrdersResponse status="0" error="0" processedDT="2015-03-24T13:25:55.772+03:00" orderCount="2" techMessage="Успех"><order shopId="151" shopName="Тестовый магазин" articleId="151" articleName="Байбик-Шоп" invoiceId="2000000432057" orderNumber="2000000432057" customerNumber="100500" createdDatetime="2015-03-24T10:19:02.629+03:00" paid="false" orderSumAmount="100.00" orderSumCurrencyPaycash="10643" orderSumBankPaycash="1003" shopSumAmount="99.00" shopSumCurrencyPaycash="10643" shopSumBankPaycash="1003" payerCode="4100322344779" paymentType="PC" agentId="" uniLabel="1ca3237f-0001-5000-8000-00000003d4af"></order><order shopId="151" shopName="Тестовый магазин" articleId="151" articleName="Байбик-Шоп" invoiceId="2000000432066" orderNumber="2000000432066" paymentSystemOrderNumber="480497224775004008" customerNumber="100500" createdDatetime="2015-03-24T10:26:50.792+03:00" paid="true" orderSumAmount="100.00" orderSumCurrencyPaycash="10643" orderSumBankPaycash="1003" paidSumAmount="100.00" paidSumCurrencyPaycash="10643" paidSumBankPaycash="1003" receivedSumAmount="100.00" receivedSumCurrencyPaycash="10643" receivedSumBankPaycash="1003" shopSumAmount="99.00" shopSumCurrencyPaycash="10643" shopSumBankPaycash="1003" paymentDatetime="2015-03-24T10:27:04.775+03:00" paymentAuthorizationTime="480497224775004008" payerCode="4100322344779" payerAddress="77.75.157.163" payeeCode="410037493939" paymentSystemDatetime="2015-03-24T10:27:04.775+03:00" avisoReceivedDatetime="2015-03-24T10:27:05.317+03:00" avisoStatus="1000" paymentType="PC" agentId="" uniLabel="1ca32579-0001-5000-8000-00000003d4b7"></order></listOrdersResponse>
+[2015-03-24 11:26:06] Start returnPayment
+[2015-03-24 11:26:06] open_ssl_comand: openssl smime -sign -signer C:\xampp\htdocs\shop/mws/baibik.cer -inkey C:\xampp\htdocs\shop/mws/private.key -nochain -nocerts -outform PEM -nodetach -passin pass:123456
+WARNING: can't open config file: /etc/ssl/openssl.cnf
+Loading 'screen' into random state - done
+[2015-03-24 11:26:08] -----BEGIN PKCS7-----
+MIID3gYJKoZIhvcNAQcCoIIDzzCCA8sCAQExCzAJBgUrDgMCGgUAMIIBWgYJKoZI
+hvcNAQcBoIIBSwSCAUc8P3htbCB2ZXJzaW9uPSIxLjAiIGVuY29kaW5nPSJVVEYt
+OCI/Pg0KICAgICAgICA8cmV0dXJuUGF5bWVudFJlcXVlc3QNCiAgICAgICAgICAg
+IGNsaWVudE9yZGVySWQ9IjE0MjcxOTI3NjYiDQogICAgICAgICAgICByZXF1ZXN0
+RFQ9IjIwMTUtMDMtMjRUMTE6MjY6MDYuMDAwKzAxOjAwIg0KICAgICAgICAgICAg
+aW52b2ljZUlkPSIyMDAwMDAwNDMyMDU3Ig0KICAgICAgICAgICAgc2hvcElkPSIx
+NTEiDQogICAgICAgICAgICBhbW91bnQ9IjEwMCINCiAgICAgICAgICAgIGN1cnJl
+bmN5PSIxMDY0MyINCiAgICAgICAgICAgIGNhdXNlPSLQndC10YIg0YLQvtCy0LDR
+gNCwIj4xggJZMIICVQIBATBXMEkxCzAJBgNVBAYTAlJVMRgwFgYDVQQKEw9QUyBZ
+YW5kZXguTW9uZXkxIDAeBgNVBAMTF1lhbmRleCBNb25leSBJc3N1aW5nIENBAgoo
+FM+jAAIAADxoMAkGBSsOAwIaBQCggdgwGAYJKoZIhvcNAQkDMQsGCSqGSIb3DQEH
+ATAcBgkqhkiG9w0BCQUxDxcNMTUwMzI0MTAyNjA4WjAjBgkqhkiG9w0BCQQxFgQU
+Bxa8rJCnzO2GGkMYCX3n3UamTZkweQYJKoZIhvcNAQkPMWwwajALBglghkgBZQME
+ASowCwYJYIZIAWUDBAEWMAsGCWCGSAFlAwQBAjAKBggqhkiG9w0DBzAOBggqhkiG
+9w0DAgICAIAwDQYIKoZIhvcNAwICAUAwBwYFKw4DAgcwDQYIKoZIhvcNAwICASgw
+DQYJKoZIhvcNAQEBBQAEggEAl6joJy94L4YR2o+hokO4dSTldT/B79klaEAtGuMR
+9psd5RHDLZUkrFBNb0p9MNRKjngpOUKUDN2SB8hHBk325q3tq3dTTo56jVXfnFT7
+elbY9/JQEmV/i+beIGmLTIF1TbVaFioBlUh7SHIv9b39SOgS9BzwQlk1Q9GH26M7
+mdk9u7OuwtJYy+A9/7GMwCJ+gkxmcpLbh0NsIE98151T23THXGAXkHIx5esgIRgc
+OmF/hfh5W/SmpnFsyltoKL9zwNJJNcStxgBr8RzAd9eDnugWIAAjZnVMfJaOmZBa
+EvhOYnP8jz3oUfZzDQ0UHBlji78RqfezYNws1I99bjsa3Q==
+-----END PKCS7-----
+
+[2015-03-24 11:26:08] <?xml version="1.0" encoding="UTF-8"?><returnPaymentResponse status="3" error="10" processedDT="2015-03-24T13:26:08.410+03:00" techMessage="Ошибка синтаксического разбора XML документа. Синтаксис документа нарушен, либо отсутствуют обязательные элементы XML" clientOrderId="unknown"/>
+[2015-03-24 11:27:11] Start returnPayment
+[2015-03-24 11:27:11] Request: <?xml version="1.0" encoding="UTF-8"?>
+        <returnPaymentRequest
+            clientOrderId="1427192831"
+            requestDT="2015-03-24T11:27:11.000+01:00"
+            invoiceId="2000000432057"
+            shopId="151"
+            amount="100"
+            currency="10643"
+            cause="Нет товара">
+[2015-03-24 11:27:11] open_ssl_comand: openssl smime -sign -signer C:\xampp\htdocs\shop/mws/baibik.cer -inkey C:\xampp\htdocs\shop/mws/private.key -nochain -nocerts -outform PEM -nodetach -passin pass:123456
+WARNING: can't open config file: /etc/ssl/openssl.cnf
+Loading 'screen' into random state - done
+[2015-03-24 11:27:13] -----BEGIN PKCS7-----
+MIID3gYJKoZIhvcNAQcCoIIDzzCCA8sCAQExCzAJBgUrDgMCGgUAMIIBWgYJKoZI
+hvcNAQcBoIIBSwSCAUc8P3htbCB2ZXJzaW9uPSIxLjAiIGVuY29kaW5nPSJVVEYt
+OCI/Pg0KICAgICAgICA8cmV0dXJuUGF5bWVudFJlcXVlc3QNCiAgICAgICAgICAg
+IGNsaWVudE9yZGVySWQ9IjE0MjcxOTI4MzEiDQogICAgICAgICAgICByZXF1ZXN0
+RFQ9IjIwMTUtMDMtMjRUMTE6Mjc6MTEuMDAwKzAxOjAwIg0KICAgICAgICAgICAg
+aW52b2ljZUlkPSIyMDAwMDAwNDMyMDU3Ig0KICAgICAgICAgICAgc2hvcElkPSIx
+NTEiDQogICAgICAgICAgICBhbW91bnQ9IjEwMCINCiAgICAgICAgICAgIGN1cnJl
+bmN5PSIxMDY0MyINCiAgICAgICAgICAgIGNhdXNlPSLQndC10YIg0YLQvtCy0LDR
+gNCwIj4xggJZMIICVQIBATBXMEkxCzAJBgNVBAYTAlJVMRgwFgYDVQQKEw9QUyBZ
+YW5kZXguTW9uZXkxIDAeBgNVBAMTF1lhbmRleCBNb25leSBJc3N1aW5nIENBAgoo
+FM+jAAIAADxoMAkGBSsOAwIaBQCggdgwGAYJKoZIhvcNAQkDMQsGCSqGSIb3DQEH
+ATAcBgkqhkiG9w0BCQUxDxcNMTUwMzI0MTAyNzEzWjAjBgkqhkiG9w0BCQQxFgQU
+TnciPMiTHy0rFSfw3JujExJlSbAweQYJKoZIhvcNAQkPMWwwajALBglghkgBZQME
+ASowCwYJYIZIAWUDBAEWMAsGCWCGSAFlAwQBAjAKBggqhkiG9w0DBzAOBggqhkiG
+9w0DAgICAIAwDQYIKoZIhvcNAwICAUAwBwYFKw4DAgcwDQYIKoZIhvcNAwICASgw
+DQYJKoZIhvcNAQEBBQAEggEAGgndZi4t9vFpZo4d1GOZJX7SIq8T/kqWAnoasK9q
+3yUJC4Hez0dmgUS2EZUL+q2XcmeShUYmW/VC12V9gwb/TyXhSoQvyyaAoGs85GsJ
+bKW0v1obei7SM0ucsSR+a2db+1MM1hF2dUSInsm9dHpyXGv0y5HaCon8yQRYsC1v
+F4O1TCJ8vFwBGyB6Tg2sIoi7vs7oDgFV7ORgRrGrqapwpp54F4Vxuf1dG+A/fxB6
+P/c3bWGZtxUz1X9dXqnL4KpHHMK4sAkI+bVAPsQiN8OsBpNG+0CBPmFqtnGKEPMs
+jqJoB73Es2+d6RKfcfhX4iN0n3BHGSiPPiT0iDWUq+FgUQ==
+-----END PKCS7-----
+
+[2015-03-24 11:27:13] <?xml version="1.0" encoding="UTF-8"?><returnPaymentResponse status="3" error="10" processedDT="2015-03-24T13:27:13.989+03:00" techMessage="Ошибка синтаксического разбора XML документа. Синтаксис документа нарушен, либо отсутствуют обязательные элементы XML" clientOrderId="unknown"/>
+[2015-03-24 11:27:55] Start returnPayment
+[2015-03-24 11:27:55] Request: <?xml version="1.0" encoding="UTF-8"?>
+        <returnPaymentRequest
+            clientOrderId="1427192875"
+            requestDT="2015-03-24T11:27:55.000+01:00"
+            invoiceId="2000000432057"
+            shopId="151"
+            amount="100"
+            currency="10643"
+            cause="Нет товара"/>
+[2015-03-24 11:27:55] open_ssl_comand: openssl smime -sign -signer C:\xampp\htdocs\shop/mws/baibik.cer -inkey C:\xampp\htdocs\shop/mws/private.key -nochain -nocerts -outform PEM -nodetach -passin pass:123456
+WARNING: can't open config file: /etc/ssl/openssl.cnf
+Loading 'screen' into random state - done
+[2015-03-24 11:27:57] -----BEGIN PKCS7-----
+MIID3wYJKoZIhvcNAQcCoIID0DCCA8wCAQExCzAJBgUrDgMCGgUAMIIBWwYJKoZI
+hvcNAQcBoIIBTASCAUg8P3htbCB2ZXJzaW9uPSIxLjAiIGVuY29kaW5nPSJVVEYt
+OCI/Pg0KICAgICAgICA8cmV0dXJuUGF5bWVudFJlcXVlc3QNCiAgICAgICAgICAg
+IGNsaWVudE9yZGVySWQ9IjE0MjcxOTI4NzUiDQogICAgICAgICAgICByZXF1ZXN0
+RFQ9IjIwMTUtMDMtMjRUMTE6Mjc6NTUuMDAwKzAxOjAwIg0KICAgICAgICAgICAg
+aW52b2ljZUlkPSIyMDAwMDAwNDMyMDU3Ig0KICAgICAgICAgICAgc2hvcElkPSIx
+NTEiDQogICAgICAgICAgICBhbW91bnQ9IjEwMCINCiAgICAgICAgICAgIGN1cnJl
+bmN5PSIxMDY0MyINCiAgICAgICAgICAgIGNhdXNlPSLQndC10YIg0YLQvtCy0LDR
+gNCwIi8+MYICWTCCAlUCAQEwVzBJMQswCQYDVQQGEwJSVTEYMBYGA1UEChMPUFMg
+WWFuZGV4Lk1vbmV5MSAwHgYDVQQDExdZYW5kZXggTW9uZXkgSXNzdWluZyBDQQIK
+KBTPowACAAA8aDAJBgUrDgMCGgUAoIHYMBgGCSqGSIb3DQEJAzELBgkqhkiG9w0B
+BwEwHAYJKoZIhvcNAQkFMQ8XDTE1MDMyNDEwMjc1N1owIwYJKoZIhvcNAQkEMRYE
+FKvauTbiZndfB/XMCDgDvpLnGZhKMHkGCSqGSIb3DQEJDzFsMGowCwYJYIZIAWUD
+BAEqMAsGCWCGSAFlAwQBFjALBglghkgBZQMEAQIwCgYIKoZIhvcNAwcwDgYIKoZI
+hvcNAwICAgCAMA0GCCqGSIb3DQMCAgFAMAcGBSsOAwIHMA0GCCqGSIb3DQMCAgEo
+MA0GCSqGSIb3DQEBAQUABIIBAA8rLGDyDpRsCkIOA2NJGMBRtTLw/ZCVJK/A+FLs
+dO943N+wKVtiOuyzcT5L/RZstLYEgoIs4AuZ438o7Dfcd+vR2yR74hnizGIcP52j
+DUZ3Vt6X3Fpg75IqFACK5yS+U9Qso4z0fnOQVYlUUrrkB0VJtrzpU7+JcPVh1fLY
+D7OvWWnmq2fBrZFigra25HP0rsoMfDzJc9gLiTUNfrEjLP9yRi8XjskMhjGZMmwx
+YtsYb+qRqJfeu06uE35kJc+GhCklczs8qUw/4PD2x+I/qYPVIdnOqWFpGe+6AhhP
+tjU1cxBAN5KUzM0sP+PxOnVSCoeZAIcy4h4Oq6kQ3EcIPVE=
+-----END PKCS7-----
+
+[2015-03-24 11:27:57] <?xml version="1.0" encoding="UTF-8"?><returnPaymentResponse status="3" error="402" processedDT="2015-03-24T13:27:57.857+03:00" techMessage="Неверное значение параметра amount" clientOrderId="unknown"/>
+[2015-03-24 11:28:12] Start returnPayment
+[2015-03-24 11:28:12] Request: <?xml version="1.0" encoding="UTF-8"?>
+        <returnPaymentRequest
+            clientOrderId="1427192892"
+            requestDT="2015-03-24T11:28:12.000+01:00"
+            invoiceId="2000000432057"
+            shopId="151"
+            amount="100.00"
+            currency="10643"
+            cause="Нет товара"/>
+[2015-03-24 11:28:12] open_ssl_comand: openssl smime -sign -signer C:\xampp\htdocs\shop/mws/baibik.cer -inkey C:\xampp\htdocs\shop/mws/private.key -nochain -nocerts -outform PEM -nodetach -passin pass:123456
+WARNING: can't open config file: /etc/ssl/openssl.cnf
+Loading 'screen' into random state - done
+[2015-03-24 11:28:14] -----BEGIN PKCS7-----
+MIID4gYJKoZIhvcNAQcCoIID0zCCA88CAQExCzAJBgUrDgMCGgUAMIIBXgYJKoZI
+hvcNAQcBoIIBTwSCAUs8P3htbCB2ZXJzaW9uPSIxLjAiIGVuY29kaW5nPSJVVEYt
+OCI/Pg0KICAgICAgICA8cmV0dXJuUGF5bWVudFJlcXVlc3QNCiAgICAgICAgICAg
+IGNsaWVudE9yZGVySWQ9IjE0MjcxOTI4OTIiDQogICAgICAgICAgICByZXF1ZXN0
+RFQ9IjIwMTUtMDMtMjRUMTE6Mjg6MTIuMDAwKzAxOjAwIg0KICAgICAgICAgICAg
+aW52b2ljZUlkPSIyMDAwMDAwNDMyMDU3Ig0KICAgICAgICAgICAgc2hvcElkPSIx
+NTEiDQogICAgICAgICAgICBhbW91bnQ9IjEwMC4wMCINCiAgICAgICAgICAgIGN1
+cnJlbmN5PSIxMDY0MyINCiAgICAgICAgICAgIGNhdXNlPSLQndC10YIg0YLQvtCy
+0LDRgNCwIi8+MYICWTCCAlUCAQEwVzBJMQswCQYDVQQGEwJSVTEYMBYGA1UEChMP
+UFMgWWFuZGV4Lk1vbmV5MSAwHgYDVQQDExdZYW5kZXggTW9uZXkgSXNzdWluZyBD
+QQIKKBTPowACAAA8aDAJBgUrDgMCGgUAoIHYMBgGCSqGSIb3DQEJAzELBgkqhkiG
+9w0BBwEwHAYJKoZIhvcNAQkFMQ8XDTE1MDMyNDEwMjgxNFowIwYJKoZIhvcNAQkE
+MRYEFJz1ck/OaVabKTBsuXsbiHB+FAyHMHkGCSqGSIb3DQEJDzFsMGowCwYJYIZI
+AWUDBAEqMAsGCWCGSAFlAwQBFjALBglghkgBZQMEAQIwCgYIKoZIhvcNAwcwDgYI
+KoZIhvcNAwICAgCAMA0GCCqGSIb3DQMCAgFAMAcGBSsOAwIHMA0GCCqGSIb3DQMC
+AgEoMA0GCSqGSIb3DQEBAQUABIIBAHXaSKNzLWwFlmzOHYOeoKLsGhrIXdEn9Lc5
+24vr6o4Rrg60xl0rs2qIK+HEzyAvT+1oSoj0rqxLJ4rpU9cSlEJjaDmF6RRF+XKt
+X5e1jFNvDukoar+9nBk8x+mMXW9p4fznKnwbfeRg9+HynF8f7ickKTEbzLwvJgoq
+BcnEXMMCe7jlUxcgzzKSdx/Fy83jE1v5AM/qc11JLIOpf8oWVnFNoDdz2ixv/fZF
+4z85lNIoFkc2ACtdcUXWoWCgEebsz2uja2+fP52vS/Pcfzsh25RTnE67iDkfonTA
+kJD6UTD+NO8PIWgRhKFeqsD14HSC8UcSGmUHmKVvbwsANqWEZkY=
+-----END PKCS7-----
+
+[2015-03-24 11:28:14] <?xml version="1.0" encoding="UTF-8"?><returnPaymentResponse status="3" error="410" processedDT="2015-03-24T13:28:14.995+03:00" techMessage="Заказ не оплачен. Возврат невозможен" clientOrderId="1427192892"/>
+[2015-03-24 11:28:59] Start returnPayment
+[2015-03-24 11:28:59] Request: <?xml version="1.0" encoding="UTF-8"?>
+        <returnPaymentRequest
+            clientOrderId="1427192939"
+            requestDT="2015-03-24T11:28:59.000+01:00"
+            invoiceId="2000000432066"
+            shopId="151"
+            amount="100.00"
+            currency="10643"
+            cause="Нет товара"/>
+[2015-03-24 11:28:59] open_ssl_comand: openssl smime -sign -signer C:\xampp\htdocs\shop/mws/baibik.cer -inkey C:\xampp\htdocs\shop/mws/private.key -nochain -nocerts -outform PEM -nodetach -passin pass:123456
+WARNING: can't open config file: /etc/ssl/openssl.cnf
+Loading 'screen' into random state - done
+[2015-03-24 11:29:01] -----BEGIN PKCS7-----
+MIID4gYJKoZIhvcNAQcCoIID0zCCA88CAQExCzAJBgUrDgMCGgUAMIIBXgYJKoZI
+hvcNAQcBoIIBTwSCAUs8P3htbCB2ZXJzaW9uPSIxLjAiIGVuY29kaW5nPSJVVEYt
+OCI/Pg0KICAgICAgICA8cmV0dXJuUGF5bWVudFJlcXVlc3QNCiAgICAgICAgICAg
+IGNsaWVudE9yZGVySWQ9IjE0MjcxOTI5MzkiDQogICAgICAgICAgICByZXF1ZXN0
+RFQ9IjIwMTUtMDMtMjRUMTE6Mjg6NTkuMDAwKzAxOjAwIg0KICAgICAgICAgICAg
+aW52b2ljZUlkPSIyMDAwMDAwNDMyMDY2Ig0KICAgICAgICAgICAgc2hvcElkPSIx
+NTEiDQogICAgICAgICAgICBhbW91bnQ9IjEwMC4wMCINCiAgICAgICAgICAgIGN1
+cnJlbmN5PSIxMDY0MyINCiAgICAgICAgICAgIGNhdXNlPSLQndC10YIg0YLQvtCy
+0LDRgNCwIi8+MYICWTCCAlUCAQEwVzBJMQswCQYDVQQGEwJSVTEYMBYGA1UEChMP
+UFMgWWFuZGV4Lk1vbmV5MSAwHgYDVQQDExdZYW5kZXggTW9uZXkgSXNzdWluZyBD
+QQIKKBTPowACAAA8aDAJBgUrDgMCGgUAoIHYMBgGCSqGSIb3DQEJAzELBgkqhkiG
+9w0BBwEwHAYJKoZIhvcNAQkFMQ8XDTE1MDMyNDEwMjkwMVowIwYJKoZIhvcNAQkE
+MRYEFBttrg66cZH4hl5igp1mvAGfYSSnMHkGCSqGSIb3DQEJDzFsMGowCwYJYIZI
+AWUDBAEqMAsGCWCGSAFlAwQBFjALBglghkgBZQMEAQIwCgYIKoZIhvcNAwcwDgYI
+KoZIhvcNAwICAgCAMA0GCCqGSIb3DQMCAgFAMAcGBSsOAwIHMA0GCCqGSIb3DQMC
+AgEoMA0GCSqGSIb3DQEBAQUABIIBAJmlPZIv7PwpNEC6gk5pmuLcW2tD2HToIR44
+Erk62Pdtq0glXZBnYahjtYujZklZWG0r99GQzf4bzybHc/aP1rnM11VIrKG4a263
+uzj80Gj8bysIqrq7OLt05aWXLW9xXz0+7juxntsOzUN8Oa1SwPviU+ZzCcJ0yNsV
+sss1MmQ2s4tr7kfpqoZrsJ96DHlVR4YljTkyMmztgl0FfmOcMwxJcjvPL5Y08DIn
+GGYGS1aVODOhL3k0K6rXHn9qVCj4onTNfpTNXT0q1B+R+hktYHtOMBPRdUa92uTy
+aFX8iycBzlojYSOUzqXmyMEND0PnHXsqUXR7j9hTt2f6tDTvdm8=
+-----END PKCS7-----
+
+[2015-03-24 11:29:02] <?xml version="1.0" encoding="UTF-8"?><returnPaymentResponse status="0" error="0" processedDT="2015-03-24T13:29:02.531+03:00" techMessage="Успех" clientOrderId="1427192939"/>
+[2015-03-28 09:15:00] Start listOrder
+[2015-03-28 09:15:00] Request params:
+[2015-03-28 09:15:00] Array
+(
+    [requestDT] => 2015-03-28T09:15:00.000Z
+    [outputFormat] => XML
+    [shopId] => 151
+    [orderCreatedDatetimeLessOrEqual] => 2015-03-28T09:15:00.000Z
+)
+
+[2015-03-28 09:15:21] 
+[2015-03-28 09:24:47] Start listOrder
+[2015-03-28 09:24:47] Request params:
+[2015-03-28 09:24:47] Array
+(
+    [requestDT] => 2015-03-28T09:24:47.000Z
+    [outputFormat] => XML
+    [shopId] => 151
+    [orderCreatedDatetimeLessOrEqual] => 2015-03-28T09:24:47.000Z
+)
+
+[2015-03-28 09:25:09] 
+[2015-03-28 09:25:30] Start listOrder
+[2015-03-28 09:25:30] Request params:
+[2015-03-28 09:25:30] Array
+(
+    [requestDT] => 2015-03-28T09:25:30.000Z
+    [outputFormat] => XML
+    [shopId] => 151
+    [orderCreatedDatetimeLessOrEqual] => 2015-03-28T09:25:30.000Z
+)
+
+[2015-03-28 09:25:52] 
