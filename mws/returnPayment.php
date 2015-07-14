@@ -3,7 +3,7 @@ namespace shop;
 
 require_once "../Settings.php";
 require_once "MWS.php";
-//phpinfo();
+
 $mws = new MWS(new Settings());
 
 ?>

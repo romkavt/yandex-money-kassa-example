@@ -6,20 +6,17 @@ use HttpException;
 require_once "../Log.php";
 require_once "../Utils.php";
 
-class MWS
-{
+class MWS {
 
     private $settings;
     private $log;
 
-    function __construct(Settings $settings)
-    {
+    function __construct(Settings $settings) {
         $this->log = new Log($settings);
         $this->settings = $settings;
     }
 
-    public function listOrders()
-    {
+    public function listOrders() {
         $this->log->info("Start listOrder");
         $requestParams = array(
             'requestDT' => Utils::formatDateForMWS(new \DateTime()),
@@ -35,8 +32,7 @@ class MWS
         return $result;
     }
 
-    public function listReturns()
-    {
+    public function listReturns() {
         $this->log->info("Start listReturns");
         $requestParams = array(
             'requestDT' => Utils::formatDateForMWS(new \DateTime()),
@@ -53,8 +49,7 @@ class MWS
         return $result;
     }
 
-    public function returnPayment($invoiceId, $amount)
-    {
+    public function returnPayment($invoiceId, $amount) {
         $this->log->info("Start returnPayment");
 
         $source = "<?xml version=\"1.0\" encoding=\"UTF-8\"?>
@@ -74,8 +69,7 @@ class MWS
         return $result;
     }
 
-    public function confirmPayment($invoiceId, $amount)
-    {
+    public function confirmPayment($invoiceId, $amount) {
         $this->log->info("Start confirmPayment");
 
         $source = "<?xml version=\"1.0\" encoding=\"UTF-8\"?>
@@ -93,8 +87,7 @@ class MWS
         return $result;
     }
 
-    public function cancelPayment($invoiceId, $amount)
-    {
+    public function cancelPayment($invoiceId, $amount) {
         $this->log->info("Start cancelPayment");
 
         $source = "<?xml version=\"1.0\" encoding=\"UTF-8\"?>
@@ -109,8 +102,7 @@ class MWS
         return $result;
     }
 
-    public function repeatCardPayment($invoiceId, $amount)
-    {
+    public function repeatCardPayment($invoiceId, $amount) {
         $this->log->info("Start repeatCardPayment");
 
         $source = "<?xml version=\"1.0\" encoding=\"UTF-8\"?>
@@ -125,8 +117,7 @@ class MWS
         return $result;
     }
 
-    private function singData($source_data)
-    {
+    private function singData($source_data) {
         $descriptorspec = array(
             0 => array("pipe", "r"),
             1 => array("pipe", "w"),
@@ -162,8 +153,7 @@ class MWS
         }
     }
 
-    private function sendRequest($action, $request_params, $useEncryption = false)
-    {
+    private function sendRequest($action, $request_params, $useEncryption = false) {
         $curl = curl_init();
         $content_type = $useEncryption ? "application/pkcs7-mime" : "x-www-form-urlencoded";
         curl_setopt_array($curl, array(
@@ -195,5 +185,4 @@ class MWS
         }
         return $result;
     }
-
 }

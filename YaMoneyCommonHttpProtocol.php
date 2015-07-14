@@ -1,11 +1,4 @@
 <?php
-/**
- * Created by IntelliJ IDEA.
- * User: baibik
- * Date: 04.03.15
- * Time: 2:48
- * To change this template use File | Settings | File Templates.
- */
 
 namespace shop;
 require_once 'Utils.php';
@@ -13,15 +6,13 @@ require_once 'Log.php';
 
 use DateTime;
 
+class YaMoneyCommonHttpProtocol {
 
-class YaMoneyCommonHttpProtocol
-{
     private $action;
     private $settings;
     private $log;
 
-    public function __construct($action, Settings $settings)
-    {
+    public function __construct($action, Settings $settings) {
         $this->action = $action;
         $this->settings = $settings;
         $this->log = new Log($settings);
@@ -31,8 +22,7 @@ class YaMoneyCommonHttpProtocol
      * Основной метод, обрабаывающий запрос checkOrder и paymentAviso
      * @param $request - массив параметров HTTP-запроса
      */
-    public function processRequest($request)
-    {
+    public function processRequest($request) {
         $this->log("Start " . $this->action);
         $this->log("Security type " . $this->settings->SECURITY_TYPE);
         if ($this->settings->SECURITY_TYPE == "MD5") {
@@ -63,13 +53,12 @@ class YaMoneyCommonHttpProtocol
     }
 
     /**
-     * Бизнесовая логика проверки корректности параметров заказа.
+     * Логика проверки корректности параметров заказа.
      * Пускай, в нашем магазине нет товаров дешевле 100 р.
      * @param $request - массив с параметрами запроса
      * @return string - сформированный ответ в формате XML
      */
-    private function checkOrder($request)
-    {
+    private function checkOrder($request) {
         $response = null;
         if ($request['orderSumAmount'] < 100) {
             $response = $this->buildResponse($this->action, $request['invoiceId'], 100, "Сумма должна быть больше 100 руб.");
@@ -80,12 +69,11 @@ class YaMoneyCommonHttpProtocol
     }
 
     /**
-     * Бизнесовая логика обработки нотификации о совершённом платеже
+     * Логика обработки нотификации о совершённом платеже
      * @param $request - массив с параметрами запроса
      * @return string - сформированный ответ в формате XML
      */
-    private function paymentAviso($request)
-    {
+    private function paymentAviso($request) {
         return $this->buildResponse($this->action, $request['invoiceId'], 0);
     }
 
@@ -95,8 +83,7 @@ class YaMoneyCommonHttpProtocol
      * @param $request - массив с парметрами запроса
      * @return bool - результат проверки
      */
-    private function checkMD5($request)
-    {
+    private function checkMD5($request) {
         $str = $request['action'] . ";" .
             $request['orderSumAmount'] . ";" . $request['orderSumCurrencyPaycash'] . ";" .
             $request['orderSumBankPaycash'] . ";" . $request['shopId'] . ";" .
@@ -120,8 +107,7 @@ class YaMoneyCommonHttpProtocol
      * @param $message      - текст ошибки. Может отсутствовать
      * @return string       - сформированный XML
      */
-    private function buildResponse($functionName, $invoiceId, $result_code, $message = null)
-    {
+    private function buildResponse($functionName, $invoiceId, $result_code, $message = null) {
         try {
             $performedDatetime = Utils::formatDate(new DateTime());
             $response = '<?xml version="1.0" encoding="UTF-8"?><' . $functionName . 'Response performedDatetime="' . $performedDatetime .
@@ -137,8 +123,7 @@ class YaMoneyCommonHttpProtocol
      * Проверка подписи запроса при взаимодействии по схеме XML/PKCS#7
      * @return ассоциативный массив или null, в случае ошибки разбора
      */
-    private function verifySign()
-    {
+    private function verifySign() {
         $descriptorspec = array(0 => array("pipe", "r"), 1 => array("pipe", "w"), 2 => array("pipe", "w"));
         $certificate = 'yamoney.pem';
         $process = proc_open('openssl smime -verify -inform PEM -nointern -certfile ' . $certificate . ' -CAfile ' . $certificate,
@@ -165,21 +150,15 @@ class YaMoneyCommonHttpProtocol
         return null;
     }
 
-    private function log($str)
-    {
+    private function log($str) {
         $this->log->info($str);
     }
 
-    private function sendResponse($responseBody)
-    {
+    private function sendResponse($responseBody) {
         $this->log("Response: " . $responseBody);
         header("HTTP/1.0 200");
         header("Content-Type: application/xml");
         echo $responseBody;
         exit;
     }
-
-
-
-
 }
