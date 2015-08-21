@@ -18,13 +18,7 @@ class MWS {
 
     public function listOrders() {
         $this->log->info("Start listOrder");
-        $requestParams = array(
-            'requestDT' => Utils::formatDateForMWS(new \DateTime()),
-            'outputFormat' => 'XML',
-            'shopId' => $this->settings->SHOP_ID,
-            'orderCreatedDatetimeLessOrEqual' => Utils::formatDateForMWS(new \DateTime())
-
-        );
+        $requestParams = "requestDT=".Utils::formatDateForMWS(new \DateTime())."&outputFormat=XML&shopId=".$this->settings->SHOP_ID."&orderCreatedDatetimeLessOrEqual=".Utils::formatDateForMWS(new \DateTime())."";
         $this->log->info("Request params:");
         $this->log->info($requestParams);
         $result = $this->sendRequest("listOrders", $requestParams);
@@ -34,14 +28,7 @@ class MWS {
 
     public function listReturns() {
         $this->log->info("Start listReturns");
-        $requestParams = array(
-            'requestDT' => Utils::formatDateForMWS(new \DateTime()),
-            'outputFormat' => 'XML',
-            'shopId' => $this->settings->SHOP_ID,
-            'from' => '2015-01-01T00:00:00.000Z',
-            'till' => Utils::formatDateForMWS(new \DateTime()),
-
-        );
+        $requestParams = "requestDT=".Utils::formatDateForMWS(new \DateTime())."&outputFormat=XML&shopId=".$this->settings->SHOP_ID."&from=2015-01-01T00:00:00.000Z&till=".Utils::formatDateForMWS(new \DateTime())."";
         $this->log->info("Request params:");
         $this->log->info($requestParams);
         $result = $this->sendRequest("listReturns", $requestParams);
