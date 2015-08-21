@@ -58,7 +58,7 @@ class MWS {
             requestDT=\"" . Utils::formatDate(new \DateTime()) . "\"
             invoiceId=\"" . $invoiceId . "\"
             shopId=\"" . $this->settings->SHOP_ID . "\"
-            amount=\"" . $amount . "\"
+            amount=\"" . $amount . ".00\"
             currency=\"" . $this->settings->CURRENCY. "\"
             cause=\"Нет товара\"/>";
 
@@ -72,17 +72,11 @@ class MWS {
     public function confirmPayment($invoiceId, $amount) {
         $this->log->info("Start confirmPayment");
 
-        $source = "<?xml version=\"1.0\" encoding=\"UTF-8\"?>
-        <confirmPaymentRequest
-            clientOrderId=\"" . mktime() . "\"
-            requestDT=\"" . Utils::formatDate(new \DateTime()) . "\"
-            orderId=\"" . $invoiceId . "\"
-            amount=\"" . $amount . "\"
-            currency=\"" . $this->settings->CURRENCY. "\"/>";
+        $requestParams = "clientOrderId=".mktime()."&requestDT=". Utils::formatDate(new \DateTime())."&orderId=".$invoiceId."&amount=".$amount."&currency=RUB";
 
         $this->log->info("Request: ".$source);
 
-        $result = $this->sendRequest("confirmPayment", $this->singData($source), true);
+        $result = $this->sendRequest("confirmPayment", $requestParams);
         $this->log->info($result);
         return $result;
     }
@@ -90,29 +84,22 @@ class MWS {
     public function cancelPayment($invoiceId, $amount) {
         $this->log->info("Start cancelPayment");
 
-        $source = "<?xml version=\"1.0\" encoding=\"UTF-8\"?>
-        <cancelPaymentRequest
-            requestDT=\"" . Utils::formatDate(new \DateTime()) . "\"
-            orderId=\"" . $invoiceId . "\"/>";
+        $requestParams = "requestDT=".Utils::formatDate(new \DateTime())."&orderId=".$invoiceId."";
 
         $this->log->info("Request: ".$source);
 
-        $result = $this->sendRequest("cancelPayment", $this->singData($source), true);
+        $result = $this->sendRequest("cancelPayment", $requestParams);
         $this->log->info($result);
         return $result;
     }
 
     public function repeatCardPayment($invoiceId, $amount) {
         $this->log->info("Start repeatCardPayment");
-
-        $source = "<?xml version=\"1.0\" encoding=\"UTF-8\"?>
-        <repeatCardPaymentRequest
-            clientOrderId=\"" . mktime() . "\"
-            invoiceId=\"" . $invoiceId . "\"/>";
+        $requestParams = "clientOrderId=".mktime()."&invoiceId=".$invoiceId."&amount=".$amount."";
 
         $this->log->info("Request: ".$source);
 
-        $result = $this->sendRequest("repeatCardPayment", $this->singData($source), true);
+        $result = $this->sendRequest("repeatCardPayment", $requestParams);
         $this->log->info($result);
         return $result;
     }
@@ -121,7 +108,7 @@ class MWS {
         $descriptorspec = array(
             0 => array("pipe", "r"),
             1 => array("pipe", "w"),
-            2 => array("file", $this->settings->LOG_FILE, 'a')
+            2 => array("pipe", "w"),
         );
 
         try {
@@ -167,12 +154,9 @@ class MWS {
             CURLOPT_SSLKEY => $this->settings->mws_private_key,
             CURLOPT_SSLCERTPASSWD => $this->settings->mws_cert_password,
             CURLOPT_SSL_VERIFYHOST => false,
-            /*
-            CURLOPT_SSLCERT => $useEncryption ? '' : $this->settings->mws_cert,
-            CURLOPT_SSLKEY => $useEncryption ? '' : $this->settings->mws_private_key,
-            CURLOPT_SSLCERTPASSWD => $useEncryption ? '' : '123456',*/
-            CURLOPT_POSTFIELDS => $useEncryption ? $request_params : http_build_query($request_params)
+            CURLOPT_POSTFIELDS => $request_params
         ));
+
         $result = null;
         try {
             $result = curl_exec($curl);
@@ -186,3 +170,4 @@ class MWS {
         return $result;
     }
 }
+
