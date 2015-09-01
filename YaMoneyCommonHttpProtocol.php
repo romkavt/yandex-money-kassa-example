@@ -6,6 +6,9 @@ require_once 'Log.php';
 
 use DateTime;
 
+/**
+ * The implementation of payment notification methods.
+ */
 class YaMoneyCommonHttpProtocol {
 
     private $action;
@@ -19,7 +22,7 @@ class YaMoneyCommonHttpProtocol {
     }
 
     /**
-     * Dispatching checkOrder and paymentAviso requests.
+     * Processes "checkOrder" and "paymentAviso" requests.
      * @param array $request payment parameters
      */
     public function processRequest($request) {
@@ -27,7 +30,7 @@ class YaMoneyCommonHttpProtocol {
         $this->log("Security type " . $this->settings->SECURITY_TYPE);
         if ($this->settings->SECURITY_TYPE == "MD5") {
             $this->log("Request: " . print_r($request, true));
-            // If the md5 checking fails, respond with "1" error code
+            // If the MD5 checking fails, respond with "1" error code
             if (!$this->checkMD5($request)) {
                 $response = $this->buildResponse($this->action, $request['invoiceId'], 1);
                 $this->sendResponse($response);
@@ -42,26 +45,23 @@ class YaMoneyCommonHttpProtocol {
         }
         $response = null;
         if ($this->action == 'checkOrder') {
-            // Checking for a payment parameters, build response.
             $response = $this->checkOrder($request);
         } else {
-            // Making payment confirmation, build response.
             $response = $this->paymentAviso($request);
         }
-        // Send response.
         $this->sendResponse($response);
     }
 
     /**
-     * CheckOrder request processing. We suppose that there are
-     * no item with price less then 100 RUB.
+     * CheckOrder request processing. We suppose there are no item with price less
+     * than 100 rubles in the shop.
      * @param  array $request payment parameters
-     * @return string         prepared response in XML format.
+     * @return string         prepared XML response
      */
     private function checkOrder($request) {
         $response = null;
         if ($request['orderSumAmount'] < 100) {
-            $response = $this->buildResponse($this->action, $request['invoiceId'], 100, "The amount should be more than 100 RUB.");
+            $response = $this->buildResponse($this->action, $request['invoiceId'], 100, "The amount should be more than 100 rubles.");
         } else {
             $response = $this->buildResponse($this->action, $request['invoiceId'], 0);
         }
@@ -71,16 +71,16 @@ class YaMoneyCommonHttpProtocol {
     /**
      * PaymentAviso request processing.
      * @param  array $request payment parameters
-     * @return string prepared response in XML format.
+     * @return string prepared response in XML format
      */
     private function paymentAviso($request) {
         return $this->buildResponse($this->action, $request['invoiceId'], 0);
     }
 
     /**
-     * Checking for a MD5 sign.
+     * Checking the MD5 sign.
      * @param  array $request payment parameters
-     * @return bool checking result
+     * @return bool true if MD5 hash is correct 
      */
     private function checkMD5($request) {
         $str = $request['action'] . ";" .
@@ -102,8 +102,8 @@ class YaMoneyCommonHttpProtocol {
      * @param  string $functionName  "checkOrder" or "paymentAviso" string
      * @param  string $invoiceId     transaction number
      * @param  string $result_code   result code
-     * @param  string $message error message. May be null.
-     * @return string                resulted XML
+     * @param  string $message       error message. May be null.
+     * @return string                prepared XML response
      */
     private function buildResponse($functionName, $invoiceId, $result_code, $message = null) {
         try {
