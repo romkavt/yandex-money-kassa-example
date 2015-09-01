@@ -24,7 +24,7 @@ class MWS {
      * @return string answer from Yandex.Money in XML format
      */
     public function listOrders() {
-        $action = __FUNCTION__;
+        $action = "listOrders";
         $this->log->info("Start " . $action);
         $dateTime = Utils::formatDateForMWS(new \DateTime());
         $requestParams = array(
@@ -43,7 +43,7 @@ class MWS {
      * @return string answer from Yandex.Money in XML format
      */
     public function listReturns() {
-        $action = __FUNCTION__;
+        $action = "listReturns";
         $this->log->info("Start " . $action);
         $dateTime = Utils::formatDateForMWS(new \DateTime()) ;
         $requestParams = array(
@@ -65,7 +65,7 @@ class MWS {
      * @return string                answer from Yandex.Money in XML format
      */
     public function returnPayment($invoiceId, $amount) {
-        $action = __FUNCTION__;
+        $action = "returnPayment";
         $this->log->info("Start " . $action);
         $dateTime = Utils::formatDate(new \DateTime()) ;
         $requestParams = array(
@@ -89,7 +89,7 @@ class MWS {
      * @return string              answer from Yandex.Money in XML format
      */
     public function confirmPayment($orderId, $amount) {
-        $action = __FUNCTION__;
+        $action = "confirmPayment";
         $this->log->info("Start " . $action);
         $dateTime = Utils::formatDate(new \DateTime()) ;
         $requestParams = array(
@@ -110,7 +110,7 @@ class MWS {
      * @return string              answer from Yandex.Money in XML format
      */
     public function cancelPayment($orderId) {
-        $action = __FUNCTION__;
+        $action = "cancelPayment";
         $this->log->info("Start " . $action);
         $dateTime = Utils::formatDate(new \DateTime()) ;
         $requestParams = array(
@@ -130,7 +130,7 @@ class MWS {
      * @return string                answer from Yandex.Money in XML format
      */
     public function repeatCardPayment($invoiceId, $amount) {
-        $action = __FUNCTION__;
+        $action = "repeatCardPayment";
         $this->log->info("Start " . $action);
         $requestParams = array(
             'clientOrderId' => mktime(),

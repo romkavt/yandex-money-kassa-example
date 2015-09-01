@@ -19,21 +19,21 @@ class YaMoneyCommonHttpProtocol {
     }
 
     /**
-     * Основной метод, обрабаывающий запрос checkOrder и paymentAviso
-     * @param $request - массив параметров HTTP-запроса
+     * Dispatching checkOrder and paymentAviso requests.
+     * @param array $request payment parameters
      */
     public function processRequest($request) {
         $this->log("Start " . $this->action);
         $this->log("Security type " . $this->settings->SECURITY_TYPE);
         if ($this->settings->SECURITY_TYPE == "MD5") {
             $this->log("Request: " . print_r($request, true));
-            // Если подпись не сошлась, сформируем и отправим ответ с кодом "1"
+            // If the md5 checking fails, respond with "1" error code
             if (!$this->checkMD5($request)) {
                 $response = $this->buildResponse($this->action, $request['invoiceId'], 1);
                 $this->sendResponse($response);
             }
         } else if ($this->settings->SECURITY_TYPE == "PKCS7") {
-            // Проверим подпись запроса и получим исходные данные. Если подпись не сошлась, отправляем ответ с кодом "200"
+            // Checking for a certificate sign. If the checking fails, respond with "200" error code.
             if (($request = $this->verifySign()) == null) {
                 $response = $this->buildResponse($this->action, null, 200);
                 $this->sendResponse($response);
@@ -42,26 +42,26 @@ class YaMoneyCommonHttpProtocol {
         }
         $response = null;
         if ($this->action == 'checkOrder') {
-            // Проверим параметры заказа и сформируем ответ
+            // Checking for a payment parameters, build response.
             $response = $this->checkOrder($request);
         } else {
-            // Проведём подтверждение покупки и сформируем ответ
+            // Making payment confirmation, build response.
             $response = $this->paymentAviso($request);
         }
-        // Отправим ответ
+        // Send response.
         $this->sendResponse($response);
     }
 
     /**
-     * Логика проверки корректности параметров заказа.
-     * Пускай, в нашем магазине нет товаров дешевле 100 р.
-     * @param $request - массив с параметрами запроса
-     * @return string - сформированный ответ в формате XML
+     * CheckOrder request processing. We suppose that there are
+     * no item with price less then 100 RUB.
+     * @param  array $request payment parameters
+     * @return string         prepared response in XML format.
      */
     private function checkOrder($request) {
         $response = null;
         if ($request['orderSumAmount'] < 100) {
-            $response = $this->buildResponse($this->action, $request['invoiceId'], 100, "Сумма должна быть больше 100 руб.");
+            $response = $this->buildResponse($this->action, $request['invoiceId'], 100, "The amount should be more than 100 RUB.");
         } else {
             $response = $this->buildResponse($this->action, $request['invoiceId'], 0);
         }
@@ -69,19 +69,18 @@ class YaMoneyCommonHttpProtocol {
     }
 
     /**
-     * Логика обработки нотификации о совершённом платеже
-     * @param $request - массив с параметрами запроса
-     * @return string - сформированный ответ в формате XML
+     * PaymentAviso request processing.
+     * @param  array $request payment parameters
+     * @return string prepared response in XML format.
      */
     private function paymentAviso($request) {
         return $this->buildResponse($this->action, $request['invoiceId'], 0);
     }
 
-
     /**
-     * Проверка MD5-подписи парметров запроса
-     * @param $request - массив с парметрами запроса
-     * @return bool - результат проверки
+     * Checking for a MD5 sign.
+     * @param  array $request payment parameters
+     * @return bool checking result
      */
     private function checkMD5($request) {
         $str = $request['action'] . ";" .
@@ -89,9 +88,8 @@ class YaMoneyCommonHttpProtocol {
             $request['orderSumBankPaycash'] . ";" . $request['shopId'] . ";" .
             $request['invoiceId'] . ";" . $request['customerNumber'] . ";" . $this->settings->SHOP_PASSWORD;
         $this->log("String to md5: " . $str);
-        // Полученную строку приведём к верхнему регистру
         $md5 = strtoupper(md5($str));
-        // Параметр md5 запроса так же приведём к верхнему регистру
+
         if ($md5 != strtoupper($request['md5'])) {
             $this->log("Wait for md5:" . $md5 . ", recieved md5: " . $request['md5']);
             return false;
@@ -100,12 +98,12 @@ class YaMoneyCommonHttpProtocol {
     }
 
     /**
-     * Формирование строки ответа в формате XML
-     * @param $functionName - checkOrder или paymentAviso
-     * @param $invoiceId    - идентификатор транзакции
-     * @param $result_code  - код ответа
-     * @param $message      - текст ошибки. Может отсутствовать
-     * @return string       - сформированный XML
+     * Building XML response.
+     * @param  string $functionName  "checkOrder" or "paymentAviso" string
+     * @param  string $invoiceId     transaction number
+     * @param  string $result_code   result code
+     * @param  string $message error message. May be null.
+     * @return string                resulted XML
      */
     private function buildResponse($functionName, $invoiceId, $result_code, $message = null) {
         try {
@@ -120,8 +118,8 @@ class YaMoneyCommonHttpProtocol {
     }
 
     /**
-     * Проверка подписи запроса при взаимодействии по схеме XML/PKCS#7
-     * @return ассоциативный массив или null, в случае ошибки разбора
+     * Checking for sign when XML/PKCS#7 scheme is used.
+     * @return array if request is successful, returns key-value array of request params, null otherwise.
      */
     private function verifySign() {
         $descriptorspec = array(0 => array("pipe", "r"), 1 => array("pipe", "w"), 2 => array("pipe", "w"));
@@ -129,7 +127,7 @@ class YaMoneyCommonHttpProtocol {
         $process = proc_open('openssl smime -verify -inform PEM -nointern -certfile ' . $certificate . ' -CAfile ' . $certificate,
             $descriptorspec, $pipes);
         if (is_resource($process)) {
-            //Получим данные из тела запроса
+            // Getting data from request body.
             $data = file_get_contents($this->settings->request_source); // "php://input"
             fwrite($pipes[0], $data);
             fclose($pipes[0]);
@@ -140,9 +138,7 @@ class YaMoneyCommonHttpProtocol {
                 return null;
             } else {
                 $this->log("Row xml: " . $content);
-                // Преобразуем строку в XML
                 $xml = simplexml_load_string($content);
-                // Сконвертируем атрибуты XML в ассоциативный массив
                 $array = json_decode(json_encode($xml), TRUE);
                 return $array["@attributes"];
             }
