@@ -20,12 +20,12 @@ class MWS {
     }
 
     /**
-     * Returns a successful orders and their properties.
-     * @return string answer from Yandex.Money in XML format
+     * Returns successful orders and their properties.
+     * @return string response from Yandex.Money in XML format
      */
     public function listOrders() {
-        $action = "listOrders";
-        $this->log->info("Start " . $action);
+        $methodName = "listOrders";
+        $this->log->info("Start " . $methodName);
         $dateTime = Utils::formatDateForMWS(new \DateTime());
         $requestParams = array(
             'requestDT' => $dateTime,
@@ -33,18 +33,18 @@ class MWS {
             'shopId' => $this->settings->SHOP_ID,
             'orderCreatedDatetimeLessOrEqual' => $dateTime
         );
-        $result = $this->sendUrlEncodedRequest($action, $requestParams);
+        $result = $this->sendUrlEncodedRequest($methodName, $requestParams);
         $this->log->info($result);
         return $result;
     }
 
     /**
      * Returns refunded payments.
-     * @return string answer from Yandex.Money in XML format
+     * @return string response from Yandex.Money in XML format
      */
     public function listReturns() {
-        $action = "listReturns";
-        $this->log->info("Start " . $action);
+        $methodName = "listReturns";
+        $this->log->info("Start " . $methodName);
         $dateTime = Utils::formatDateForMWS(new \DateTime()) ;
         $requestParams = array(
             'requestDT' => $dateTime,
@@ -53,7 +53,7 @@ class MWS {
             'from' => '2015-01-01T00:00:00.000Z',
             'till' => $dateTime
         );
-        $result = $this->sendUrlEncodedRequest($action, $requestParams);
+        $result = $this->sendUrlEncodedRequest($methodName, $requestParams);
         $this->log->info($result);
         return $result;
     }
@@ -62,11 +62,11 @@ class MWS {
      * Refunds a successful transfer to the Payer's account.
      * @param  string|int $invoiceId transaction number of the transfer being refunded
      * @param  string $amount        amount to refund to the Payer's account
-     * @return string                answer from Yandex.Money in XML format
+     * @return string                response from Yandex.Money in XML format
      */
     public function returnPayment($invoiceId, $amount) {
-        $action = "returnPayment";
-        $this->log->info("Start " . $action);
+        $methodName = "returnPayment";
+        $this->log->info("Start " . $methodName);
         $dateTime = Utils::formatDate(new \DateTime()) ;
         $requestParams = array(
             'clientOrderId' => mktime(),
@@ -77,7 +77,7 @@ class MWS {
             'currency' => $this->settings->CURRENCY,
             'cause' => 'Нет товара'
         );
-        $result = $this->sendXmlRequest($action, $requestParams);
+        $result = $this->sendXmlRequest($methodName, $requestParams);
         $this->log->info($result);
         return $result;
     }
@@ -86,11 +86,11 @@ class MWS {
      * Completes a successful transfer to the merchant's account. Used for deferred transfers.
      * @param  string|int $orderId transaction number of the transfer being confirmed
      * @param  string     $amount  amount to transfer
-     * @return string              answer from Yandex.Money in XML format
+     * @return string              response from Yandex.Money in XML format
      */
     public function confirmPayment($orderId, $amount) {
-        $action = "confirmPayment";
-        $this->log->info("Start " . $action);
+        $methodName = "confirmPayment";
+        $this->log->info("Start " . $methodName);
         $dateTime = Utils::formatDate(new \DateTime()) ;
         $requestParams = array(
             'clientOrderId' => mktime(),
@@ -99,7 +99,7 @@ class MWS {
             'amount' => $amount,
             'currency' => 'RUB'
         );
-        $result = $this->sendUrlEncodedRequest($action, $requestParams);
+        $result = $this->sendUrlEncodedRequest($methodName, $requestParams);
         $this->log->info($result);
         return $result;
     }
@@ -107,17 +107,17 @@ class MWS {
     /**
      * Cancels a deferred payment.
      * @param  string|int $orderId transaction number of the deferred payment
-     * @return string              answer from Yandex.Money in XML format
+     * @return string              response from Yandex.Money in XML format
      */
     public function cancelPayment($orderId) {
-        $action = "cancelPayment";
-        $this->log->info("Start " . $action);
+        $methodName = "cancelPayment";
+        $this->log->info("Start " . $methodName);
         $dateTime = Utils::formatDate(new \DateTime()) ;
         $requestParams = array(
             'requestDT' => $dateTime,
             'orderId' => $orderId
         );
-        $result = $this->sendUrlEncodedRequest($action, $requestParams);
+        $result = $this->sendUrlEncodedRequest($methodName, $requestParams);
         $this->log->info($result);
         return $result;
     }
@@ -127,17 +127,17 @@ class MWS {
      * products or services.
      * @param  string|int $invoiceId transaction number of the transfer being repeated.
      * @param  string $amount        amount to make the payment
-     * @return string                answer from Yandex.Money in XML format
+     * @return string                response from Yandex.Money in XML format
      */
     public function repeatCardPayment($invoiceId, $amount) {
-        $action = "repeatCardPayment";
-        $this->log->info("Start " . $action);
+        $methodName = "repeatCardPayment";
+        $this->log->info("Start " . $methodName);
         $requestParams = array(
             'clientOrderId' => mktime(),
             'invoiceId' => $invoiceId,
             'amount' => $amount
         );
-        $result = $this->sendUrlEncodedRequest($action, $requestParams);
+        $result = $this->sendUrlEncodedRequest($methodName, $requestParams);
         $this->log->info($result);
         return $result;
     }
@@ -174,29 +174,48 @@ class MWS {
         }
     }
 
-    private function sendXmlRequest($action, $data) {
+    /**
+     * Makes XML/PKCS#7 request.
+     * @param  string $paymentMethod financial method name
+     * @param  array  $data          key-value pairs of request body
+     * @return string                response from Yandex.Money in XML format
+     */
+    private function sendXmlRequest($paymentMethod, $data) {
         $body = '<?xml version="1.0" encoding="UTF-8"?>';
-        $body .= '<' . $action . 'Request ';
+        $body .= '<' . $paymentMethod . 'Request ';
         foreach($data AS $param => $value) {
             $body .= $param . '="' . $value . '" ';
         }
         $body .= '/>';
 
-        return $this->sendRequest($action, $this->signData($body), "pkcs7-mime");
+        return $this->sendRequest($paymentMethod, $this->signData($body), "pkcs7-mime");
     }
 
+    /**
+     * Makes application/x-www-form-urlencoded request.
+     * @param  string $paymentMethod financial method name
+     * @param  array  $data          key-value pairs of request body
+     * @return string                response from Yandex.Money in XML format
+     */
     private function sendUrlEncodedRequest($paymentMethod, $data) {
         return $this->sendRequest($paymentMethod, http_build_query($data), "x-www-form-urlencoded");
     }
 
-    private function sendRequest($action, $requestBody, $contentType) {
-        $this->log->info($action . " Request: " . $requestBody);
+    /**
+     * Sends prepared request.
+     * @param  string $paymentMethod financial method name
+     * @param  string $requestBody   prepared request body
+     * @param  string $contentType   HTTP Content-Type header value
+     * @return string                response from Yandex.Money in XML format
+     */
+    private function sendRequest($paymentMethod, $requestBody, $contentType) {
+        $this->log->info($paymentMethod . " Request: " . $requestBody);
   
         $curl = curl_init();
         $params = array(
             CURLOPT_RETURNTRANSFER => 1,
             CURLOPT_HTTPHEADER => array('Content-type: application/' . $contentType),
-            CURLOPT_URL => 'https://penelope-demo.yamoney.ru:8083/webservice/mws/api/' . $action,
+            CURLOPT_URL => 'https://penelope-demo.yamoney.ru:8083/webservice/mws/api/' . $paymentMethod,
             CURLOPT_POST => 0,
             CURLOPT_SSL_VERIFYPEER => false,
             CURLOPT_SSLCERT => $this->settings->mws_cert,
