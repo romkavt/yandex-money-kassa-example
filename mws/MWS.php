@@ -19,16 +19,14 @@ class MWS {
     public function listOrders() {
         $action = __FUNCTION__;
         $this->log->info("Start " . $action);
-        $dateTime = Utils::formatDateForMWS(new \DateTime()) ;
+        $dateTime = Utils::formatDateForMWS(new \DateTime());
         $requestParams = array(
             'requestDT' => $dateTime,
             'outputFormat' => 'XML',
             'shopId' => $this->settings->SHOP_ID,
             'orderCreatedDatetimeLessOrEqual' => $dateTime
         );
-        $useEncryption = false;
-        $useXmlFormat = false;
-        $result = $this->sendRequest($action, $requestParams, $useEncryption, $useXmlFormat);
+        $result = $this->sendUrlEncodedRequest($action, $requestParams);
         $this->log->info($result);
         return $result;
     }
@@ -44,9 +42,7 @@ class MWS {
             'from' => '2015-01-01T00:00:00.000Z',
             'till' => $dateTime
         );
-        $useEncryption = false;
-        $useXmlFormat = false;
-        $result = $this->sendRequest($action, $requestParams, $useEncryption, $useXmlFormat);
+        $result = $this->sendUrlEncodedRequest($action, $requestParams);
         $this->log->info($result);
         return $result;
     }
@@ -64,9 +60,7 @@ class MWS {
             'currency' => $this->settings->CURRENCY,
             'cause' => 'Нет товара'
         );
-        $useEncryption = true;
-        $useXmlFormat = true;
-        $result = $this->sendRequest($action, $requestParams, $useEncryption, $useXmlFormat);
+        $result = $this->sendXmlRequest($action, $requestParams);
         $this->log->info($result);
         return $result;
     }
@@ -82,9 +76,7 @@ class MWS {
             'amount' => $amount,
             'currency' => 'RUB'
         );
-        $useEncryption = false;
-        $useXmlFormat = false;
-        $result = $this->sendRequest($action, $requestParams, $useEncryption, $useXmlFormat);
+        $result = $this->sendUrlEncodedRequest($action, $requestParams);
         $this->log->info($result);
         return $result;
     }
@@ -97,9 +89,7 @@ class MWS {
             'requestDT' => $dateTime,
             'orderId' => $invoiceId
         );
-        $useEncryption = false;
-        $useXmlFormat = false;
-        $result = $this->sendRequest($action, $requestParams, $useEncryption, $useXmlFormat);
+        $result = $this->sendUrlEncodedRequest($action, $requestParams);
         $this->log->info($result);
         return $result;
     }
@@ -112,28 +102,8 @@ class MWS {
             'invoiceId' => $invoiceId,
             'amount' => $amount
         );
-        $useEncryption = false;
-        $useXmlFormat = false;
-        $result = $this->sendRequest($action, $requestParams, $useEncryption, $useXmlFormat);
+        $result = $this->sendUrlEncodedRequest($action, $requestParams);
         $this->log->info($result);
-        return $result;
-    }
-
-    private function prepareRequestData($data = array(), $action = '', $useXmlFormat = false)
-    {
-        $result = '';
-        if (sizeof($data)) {
-            if ($useXmlFormat && $action) {
-                $result = '<?xml version="1.0" encoding="UTF-8"?>';
-                $result .= '<' . $action . 'Request ';
-                foreach($data AS $param => $value) {
-                    $result .= $param . '="' . $value . '" ';
-                }
-                $result .= '/>';
-            } else {
-                $result = http_build_query($data);
-            }
-        }
         return $result;
     }
 
@@ -169,16 +139,28 @@ class MWS {
         }
     }
 
-    private function sendRequest($action, $requestParams, $useEncryption = false, $useXmlFormat = false) {
+    private function sendXmlRequest($action, $data) {
+        $body = '<?xml version="1.0" encoding="UTF-8"?>';
+        $body .= '<' . $action . 'Request ';
+        foreach($data AS $param => $value) {
+            $body .= $param . '="' . $value . '" ';
+        }
+        $body .= '/>';
 
-        $requestData = $this->prepareRequestData($requestParams, $action, $useXmlFormat);
-        $this->log->info($action . " Request: " . $requestData);
+        return $this->sendRequest($action, $this->signData($body), "pkcs7-mime");
+    }
+
+    private function sendUrlEncodedRequest($paymentMethod, $data) {
+        return $this->sendRequest($paymentMethod, http_build_query($data), "x-www-form-urlencoded");
+    }
+
+    private function sendRequest($action, $requestBody, $contentType) {
+        $this->log->info($action . " Request: " . $requestBody);
   
         $curl = curl_init();
-        $content_type = $useEncryption ? "application/pkcs7-mime" : "x-www-form-urlencoded";
         $params = array(
             CURLOPT_RETURNTRANSFER => 1,
-            CURLOPT_HTTPHEADER => array('Content-type: application/' . $content_type),
+            CURLOPT_HTTPHEADER => array('Content-type: application/' . $contentType),
             CURLOPT_URL => 'https://penelope-demo.yamoney.ru:8083/webservice/mws/api/' . $action,
             CURLOPT_POST => 0,
             CURLOPT_SSL_VERIFYPEER => false,
@@ -187,14 +169,14 @@ class MWS {
             CURLOPT_SSLCERTPASSWD => $this->settings->mws_cert_password,
             CURLOPT_SSL_VERIFYHOST => false,
             CURLOPT_VERBOSE => 1,
-            CURLOPT_POSTFIELDS => $useEncryption ? $this->signData($requestData) : $requestData
+            CURLOPT_POSTFIELDS => $requestBody
         );
         curl_setopt_array($curl, $params);
         $result = null;
         try {
             $result = curl_exec($curl);
             if (!$result) {
-              trigger_error(curl_error($curl));
+                trigger_error(curl_error($curl));
             }
             curl_close($curl);
         } catch (HttpException $ex) {
