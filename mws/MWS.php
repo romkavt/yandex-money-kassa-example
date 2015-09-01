@@ -6,6 +6,9 @@ use HttpException;
 require_once "../Log.php";
 require_once "../Utils.php";
 
+/**
+ * Implementation of Merchant Web Services protocol.
+ */
 class MWS {
 
     private $settings;
@@ -16,6 +19,10 @@ class MWS {
         $this->settings = $settings;
     }
 
+    /**
+     * Returns a successful orders and their properties.
+     * @return string answer from Yandex.Money in XML format
+     */
     public function listOrders() {
         $action = __FUNCTION__;
         $this->log->info("Start " . $action);
@@ -31,6 +38,10 @@ class MWS {
         return $result;
     }
 
+    /**
+     * Returns refunded payments.
+     * @return string answer from Yandex.Money in XML format
+     */
     public function listReturns() {
         $action = __FUNCTION__;
         $this->log->info("Start " . $action);
@@ -47,6 +58,12 @@ class MWS {
         return $result;
     }
 
+    /**
+     * Refunds a successful transfer to the Payer's account.
+     * @param  string|int $invoiceId transaction number of the transfer being refunded
+     * @param  string $amount        amount to refund to the Payer's account
+     * @return string                answer from Yandex.Money in XML format
+     */
     public function returnPayment($invoiceId, $amount) {
         $action = __FUNCTION__;
         $this->log->info("Start " . $action);
@@ -65,14 +82,20 @@ class MWS {
         return $result;
     }
 
-    public function confirmPayment($invoiceId, $amount) {
+    /**
+     * Completes a successful transfer to the merchant's account. Used for deferred transfers.
+     * @param  string|int $orderId transaction number of the transfer being confirmed
+     * @param  string     $amount  amount to transfer
+     * @return string              answer from Yandex.Money in XML format
+     */
+    public function confirmPayment($orderId, $amount) {
         $action = __FUNCTION__;
         $this->log->info("Start " . $action);
         $dateTime = Utils::formatDate(new \DateTime()) ;
         $requestParams = array(
             'clientOrderId' => mktime(),
             'requestDT' => $dateTime,
-            'orderId' => $invoiceId,
+            'orderId' => $orderId,
             'amount' => $amount,
             'currency' => 'RUB'
         );
@@ -81,19 +104,31 @@ class MWS {
         return $result;
     }
 
-    public function cancelPayment($invoiceId) {
+    /**
+     * Cancels a deferred payment.
+     * @param  string|int $orderId transaction number of the deferred payment
+     * @return string              answer from Yandex.Money in XML format
+     */
+    public function cancelPayment($orderId) {
         $action = __FUNCTION__;
         $this->log->info("Start " . $action);
         $dateTime = Utils::formatDate(new \DateTime()) ;
         $requestParams = array(
             'requestDT' => $dateTime,
-            'orderId' => $invoiceId
+            'orderId' => $orderId
         );
         $result = $this->sendUrlEncodedRequest($action, $requestParams);
         $this->log->info($result);
         return $result;
     }
 
+    /**
+     * Repeats a payment using the Payer's card data (with the Payer's consent) to pay for the store's
+     * products or services.
+     * @param  string|int $invoiceId transaction number of the transfer being repeated.
+     * @param  string $amount        amount to make the payment
+     * @return string                answer from Yandex.Money in XML format
+     */
     public function repeatCardPayment($invoiceId, $amount) {
         $action = __FUNCTION__;
         $this->log->info("Start " . $action);
@@ -107,29 +142,29 @@ class MWS {
         return $result;
     }
 
-    private function signData($source_data) {
+    private function signData($data) {
         $descriptorspec = array(
             0 => array("pipe", "r"),
             1 => array("pipe", "w"),
-            2 => array("pipe", "w"),
         );
+        $descriptorspec[2] = $descriptorspec[1];
         try {
-            $open_ssl_comand = 'openssl smime -sign -signer ' . $this->settings->mws_cert .
+            $opensslCommand = 'openssl smime -sign -signer ' . $this->settings->mws_cert .
                 ' -inkey ' . $this->settings->mws_private_key .
                 ' -nochain -nocerts -outform PEM -nodetach -passin pass:'.$this->settings->mws_cert_password;
-            $this->log->info("open_ssl_comand: " . $open_ssl_comand);
-            $process = proc_open($open_ssl_comand, $descriptorspec, $pipes);
+            $this->log->info("opensslCommand: " . $opensslCommand);
+            $process = proc_open($opensslCommand, $descriptorspec, $pipes);
             if (is_resource($process)) {
-                fwrite($pipes[0], $source_data);
+                fwrite($pipes[0], $data);
                 fclose($pipes[0]);
                 $pkcs7 = stream_get_contents($pipes[1]);
                 $this->log->info($pkcs7);
                 fclose($pipes[1]);
                 $resCode = proc_close($process);
                 if ($resCode != 0) {
-                    $error_msg = 'OpenSSL call failed:' . $resCode . '\n' . $pkcs7;
-                    $this->log->info($error_msg);
-                    throw new \Exception($error_msg);
+                    $errorMsg = 'OpenSSL call failed:' . $resCode . '\n' . $pkcs7;
+                    $this->log->info($errorMsg);
+                    throw new \Exception($errorMsg);
                 }
                 return $pkcs7;
             }
