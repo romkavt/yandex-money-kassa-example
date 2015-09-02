@@ -16,7 +16,7 @@ $mws = new MWS(new Settings());
 </head>
 <body>
 <code>
-    <?php echo htmlspecialchars($mws->returnPayment($_REQUEST["invoiceId"], $_REQUEST["amount"])) ?>
+    <?php echo htmlspecialchars($mws->confirmPayment($_REQUEST["invoiceId"], $_REQUEST["amount"])) ?>
 </code>
 </body>
 </html>
