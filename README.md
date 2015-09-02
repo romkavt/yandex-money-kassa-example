@@ -10,3 +10,13 @@
 По техническим вопросам и вопросам подключения пишите нам [merchants@money.yandex.ru](mailto:merchants@money.yandex.ru).
 
 Информацию о найденных ошибках в исходном коде, а также другие замечания и дополнения вы можете оставлять в [Issues](https://github.com/yandex-money/yandex-money-kassa-example/issues).
+
+# Запуск
+
+Приложение можно запустить через Apache, Nginx, либо воспользоваться [Docker](https://docs.docker.com/) и утилитой [Docker Compose](https://docs.docker.com/compose/).
+
+Для этого в папке `docker` следует выполнить `./start.sh`(или `docker-compose up`).
+
+После этого откройте запущенное приложение [http://localhost:8080/paymentForm.html](http://localhost:8080/paymentForm.html).
+
+Если вы используете [Boot2Docker](http://boot2docker.io/), то IP-адрес можно узнать с помощью `boot2docker ip`.
