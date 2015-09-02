@@ -17,6 +17,6 @@
 
 Для этого в папке `docker` следует выполнить `./start.sh`(или `docker-compose up`).
 
-После этого скопируйте `localhost:8000/paymentForm.html` в адресную строку браузера. 
+После этого скопируйте `localhost:8080/paymentForm.html` в адресную строку браузера. 
 
 Если вы используете [Boot2Docker](http://boot2docker.io/), то IP-адрес можно узнать с помощью `boot2docker ip`.
