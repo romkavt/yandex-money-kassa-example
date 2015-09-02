@@ -1,0 +1,6 @@
+web:
+    image: million12/nginx-php
+    ports:
+        - "8080:80"
+    volumes:
+        - ./../src:/data/www/default
