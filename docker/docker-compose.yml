@@ -1,5 +1,5 @@
 web:
-    image: million12/nginx-php
+    image: million12/nginx-php:php-55
     ports:
         - "8080:80"
     volumes:
