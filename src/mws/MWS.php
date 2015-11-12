@@ -73,7 +73,7 @@ class MWS {
             'requestDT' => $dateTime,
             'invoiceId' => $invoiceId,
             'shopId' => $this->settings->SHOP_ID,
-            'amount' => number_format($amount, 2),
+            'amount' => number_format($amount, 2, '.', ''),
             'currency' => $this->settings->CURRENCY,
             'cause' => 'Нет товара'
         );
