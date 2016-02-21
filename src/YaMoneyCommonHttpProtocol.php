@@ -58,7 +58,7 @@ class YaMoneyCommonHttpProtocol {
      * @param  array $request payment parameters
      * @return string         prepared XML response
      */
-    private function checkOrder($request) {
+    protected function checkOrder($request) {
         $response = null;
         if ($request['orderSumAmount'] < 100) {
             $response = $this->buildResponse($this->action, $request['invoiceId'], 100, "The amount should be more than 100 rubles.");
@@ -73,7 +73,7 @@ class YaMoneyCommonHttpProtocol {
      * @param  array $request payment parameters
      * @return string prepared response in XML format
      */
-    private function paymentAviso($request) {
+    protected function paymentAviso($request) {
         return $this->buildResponse($this->action, $request['invoiceId'], 0);
     }
 
@@ -105,7 +105,7 @@ class YaMoneyCommonHttpProtocol {
      * @param  string $message       error message. May be null.
      * @return string                prepared XML response
      */
-    private function buildResponse($functionName, $invoiceId, $result_code, $message = null) {
+    protected function buildResponse($functionName, $invoiceId, $result_code, $message = null) {
         try {
             $performedDatetime = Utils::formatDate(new DateTime());
             $response = '<?xml version="1.0" encoding="UTF-8"?><' . $functionName . 'Response performedDatetime="' . $performedDatetime .
