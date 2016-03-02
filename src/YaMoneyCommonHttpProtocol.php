@@ -11,9 +11,9 @@ use DateTime;
  */
 class YaMoneyCommonHttpProtocol {
 
-    private $action;
-    private $settings;
-    private $log;
+    protected $action;
+    protected $settings;
+    protected $log;
 
     public function __construct($action, Settings $settings) {
         $this->action = $action;
@@ -82,7 +82,7 @@ class YaMoneyCommonHttpProtocol {
      * @param  array $request payment parameters
      * @return bool true if MD5 hash is correct 
      */
-    private function checkMD5($request) {
+    protected function checkMD5($request) {
         $str = $request['action'] . ";" .
             $request['orderSumAmount'] . ";" . $request['orderSumCurrencyPaycash'] . ";" .
             $request['orderSumBankPaycash'] . ";" . $request['shopId'] . ";" .
@@ -121,7 +121,7 @@ class YaMoneyCommonHttpProtocol {
      * Checking for sign when XML/PKCS#7 scheme is used.
      * @return array if request is successful, returns key-value array of request params, null otherwise.
      */
-    private function verifySign() {
+    protected function verifySign() {
         $descriptorspec = array(0 => array("pipe", "r"), 1 => array("pipe", "w"), 2 => array("pipe", "w"));
         $certificate = 'yamoney.pem';
         $process = proc_open('openssl smime -verify -inform PEM -nointern -certfile ' . $certificate . ' -CAfile ' . $certificate,
@@ -146,11 +146,11 @@ class YaMoneyCommonHttpProtocol {
         return null;
     }
 
-    private function log($str) {
+    protected function log($str) {
         $this->log->info($str);
     }
 
-    private function sendResponse($responseBody) {
+    protected function sendResponse($responseBody) {
         $this->log("Response: " . $responseBody);
         header("HTTP/1.0 200");
         header("Content-Type: application/xml");
