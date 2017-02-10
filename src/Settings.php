@@ -14,7 +14,7 @@ class Settings {
     public $mws_private_key;
     public $mws_cert_password = "123456";
 
-    function __construct($SECURITY_TYPE = "PKCS7" /* MD5 | PKCS7 */, $request_source = "php://input") {
+    function __construct($SECURITY_TYPE = "MD5" /* MD5 | PKCS7 */, $request_source = "php://input") {
         $this->SECURITY_TYPE = $SECURITY_TYPE;
         $this->request_source = $request_source;
         $this->LOG_FILE = dirname(__FILE__)."/log.txt";
