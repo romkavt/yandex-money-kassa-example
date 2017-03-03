@@ -86,7 +86,7 @@ class YaMoneyCommonHttpProtocol {
         $str = $request['action'] . ";" .
             $request['orderSumAmount'] . ";" . $request['orderSumCurrencyPaycash'] . ";" .
             $request['orderSumBankPaycash'] . ";" . $request['shopId'] . ";" .
-            $request['invoiceId'] . ";" . $request['customerNumber'] . ";" . $this->settings->SHOP_PASSWORD;
+            $request['invoiceId'] . ";" . trim($request['customerNumber']) . ";" . $this->settings->SHOP_PASSWORD;
         $this->log("String to md5: " . $str);
         $md5 = strtoupper(md5($str));
 
